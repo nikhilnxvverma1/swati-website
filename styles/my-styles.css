@@ -30,3 +30,38 @@ header nav ul li{
 	height:360px;
 	background-color:#235312
 }
+
+#bio{
+	padding-top:20px;
+	width: 50%;
+	float: left;
+}
+
+/*For Download link, we append a line at the end of last paragraph */
+#download-cv{
+	margin-top:18px;
+	margin-bottom:35px;
+	background-color:black;
+	padding:15px 40px 15px 40px;
+	color:white;
+	display: inline-block;
+}
+
+#expertise{
+	padding-top: 20px;
+	float: right;
+}
+
+#line-breaker{
+	list-style: none;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.content-offset{
+	padding-left:100px;
+}
+
+#work-with-me{
+	width:50%;
+}
