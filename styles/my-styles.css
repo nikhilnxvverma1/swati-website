@@ -1,8 +1,8 @@
 body{
 	padding-left:140px;
 	padding-right:140px;
+	padding-bottom:20px;
 	margin:0px;
-	background-color: #1ffa3b
 }
 
 header{
@@ -28,7 +28,7 @@ header nav ul li{
 #cover{
 	width:100%;
 	height:360px;
-	background-color:#235312
+	background-color:#CAA059
 }
 
 #bio{
@@ -64,4 +64,36 @@ header nav ul li{
 
 #work-with-me{
 	width:50%;
+}
+
+hr{
+	margin-bottom: 20px;
+}
+
+.copyright{
+	float: left;
+}
+
+.copyright p{
+	font-size:0.8em;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+
+footer nav{
+	float: right;
+	/**Warning : change this later **/
+	position: relative;
+	top:-15px;
+}
+
+.social-links li{
+	display: inline;
+	list-style: none;
+	padding-left:20px;
+}
+
+.social-links li img{
+	width:16px;
+	height:16px;
 }
