@@ -1,0 +1,32 @@
+body{
+	padding-left:140px;
+	padding-right:140px;
+	margin:0px;
+	background-color: #1ffa3b
+}
+
+header{
+	margin-top:25px;
+	margin-bottom:35px;
+	margin-left:80px;
+	margin-right:80px;
+}
+
+#logo{
+	float:left;
+}
+
+header nav ul{
+	float: right;
+}
+
+header nav ul li{
+	display: inline-block;
+	list-style: none;
+}
+
+#cover{
+	width:100%;
+	height:360px;
+	background-color:#235312
+}
