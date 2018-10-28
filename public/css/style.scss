@@ -1,8 +1,119 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+	padding-left:140px;
+	padding-right:140px;
+	padding-bottom:20px;
+	margin:0px;
 }
 
-a {
-  color: #00B7FF;
+header{
+	margin-top:25px;
+	margin-bottom:35px;
+	margin-left:80px;
+	margin-right:80px;
+}
+
+#logo{
+	float:left;
+}
+
+header nav ul{
+	float: right;
+}
+
+header nav ul li{
+	display: inline-block;
+	list-style: none;
+}
+
+#cover{
+	width:100%;
+	height:360px;
+	background-color:#CAA059
+}
+
+#bio{
+	padding-top:20px;
+	width: 50%;
+	float: left;
+}
+
+/*For Download link, we append a line at the end of last paragraph */
+#download-cv{
+	margin-top:18px;
+	margin-bottom:35px;
+	background-color:black;
+	padding:15px 40px 15px 40px;
+	color:white;
+	display: inline-block;
+}
+
+#expertise{
+	padding-top: 20px;
+	float: right;
+}
+
+#line-breaker{
+	list-style: none;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.content-offset{
+	padding-left:100px;
+}
+
+#work-with-me{
+	width:50%;
+}
+
+hr{
+	margin-bottom: 20px;
+}
+
+.copyright{
+	float: left;
+}
+
+.copyright p{
+	font-size:0.8em;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+
+footer nav{
+	float: right;
+	/**Warning : change this later **/
+	position: relative;
+	top:-15px;
+}
+
+.social-links li{
+	display: inline;
+	list-style: none;
+	padding-left:20px;
+}
+
+.social-links li img{
+	width:16px;
+	height:16px;
+}
+
+.center-aligned{
+	text-align: center;
+}
+
+#intro-brief{
+	padding-left:25%;
+	padding-right:25%;
+	margin-top:100px;
+	margin-bottom:50px;
+}
+
+.intro-details{
+	padding-left:20%;
+	padding-right:20%;
+}
+
+#intro .social-links ul{
+	padding-left:0px;
 }
