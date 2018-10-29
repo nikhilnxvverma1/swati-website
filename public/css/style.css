@@ -2,7 +2,8 @@ body {
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 20px;
-  margin: 0px; }
+  margin: 0px;
+  font-family: 'Muli', sans-serif; }
 
 .outer-margin-offset {
   margin-left: 200px;
@@ -10,12 +11,12 @@ body {
 
 header {
   margin-top: 25px;
-  margin-bottom: 35px; }
+  margin-bottom: 25px; }
 
 #logo {
   float: left;
-  text-transform: uppercase;
-  color: black; }
+  width: 200px;
+  padding-top: 18px; }
 
 header nav ul {
   float: right; }
@@ -41,7 +42,9 @@ header nav ul li {
   background-color: black;
   padding: 15px 40px 15px 40px;
   color: white;
-  display: inline-block; }
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px; }
 
 #expertise {
   padding-top: 20px;
@@ -91,7 +94,7 @@ footer nav {
   padding-left: 25%;
   padding-right: 25%;
   margin-top: 100px;
-  margin-bottom: 50px; }
+  margin-bottom: 70px; }
 
 .intro-details {
   padding-left: 20%;
@@ -110,10 +113,22 @@ footer nav {
   text-transform: capitalize; }
 
 .nav-link {
+  display: inline-block;
   margin-right: 15px;
   color: black;
   text-transform: uppercase;
   text-decoration: none; }
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s; }
+
+.nav-link:hover::after {
+  width: 100%; }
 
 #contact-email {
   color: black;
