@@ -18,6 +18,11 @@ h3{
 	line-height: 40px;
 }
 
+// theme highlight
+a{
+	color:#FE283D;
+}
+
 .outer-margin-offset{
 	margin-left:$outer-left-margin;
 	margin-right:$outer-right-margin;
@@ -151,6 +156,11 @@ footer nav{
 	padding-right:25%;
 	margin-top:100px;
 	margin-bottom:70px;
+	img{
+		height:1.5em;
+		vertical-align: sub;
+		padding-right:10px;
+	}
 }
 
 .intro-details{
@@ -158,8 +168,11 @@ footer nav{
 	padding-right:20%;
 }
 
-#intro .social-links ul{
-	padding-left:0px;
+#intro{
+	.social-links li img{
+		width:20px;
+		height:auto;
+	}
 }
 
 .uppercase{

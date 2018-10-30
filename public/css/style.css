@@ -12,6 +12,9 @@ h1 {
 h3 {
   line-height: 40px; }
 
+a {
+  color: #FE283D; }
+
 .outer-margin-offset {
   margin-left: 300px;
   margin-right: 300px; }
@@ -120,13 +123,18 @@ footer nav {
   padding-right: 25%;
   margin-top: 100px;
   margin-bottom: 70px; }
+  #intro-brief img {
+    height: 1.5em;
+    vertical-align: sub;
+    padding-right: 10px; }
 
 .intro-details {
   padding-left: 20%;
   padding-right: 20%; }
 
-#intro .social-links ul {
-  padding-left: 0px; }
+#intro .social-links li img {
+  width: 20px;
+  height: auto; }
 
 .uppercase {
   text-transform: uppercase; }
