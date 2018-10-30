@@ -83,9 +83,14 @@ p.sub-text {
 #case-studies {
   padding-left: 200px;
   padding-right: 200px; }
+  #case-studies .item-left {
+    padding-right: 20px;
+    float: left; }
+  #case-studies .item-right {
+    padding-left: 20px;
+    margin-top: 150px; }
   #case-studies .case-study-item {
-    width: 50%;
-    padding-right: 10px;
+    width: 47%;
     display: inline-block; }
     #case-studies .case-study-item img {
       width: 100%;

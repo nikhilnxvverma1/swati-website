@@ -107,9 +107,17 @@ p.sub-text{
 #case-studies{
 	padding-left:200px;
 	padding-right:200px;
+	.item-left{
+		padding-right:20px;
+		float:left;
+	}
+	.item-right{
+		padding-left:20px;
+		margin-top:150px;
+	}
 	.case-study-item{
-		width:50%;
-		padding-right:10px;
+		width:47%;
+		
 		display: inline-block;
 		img{
 			width:100%;
