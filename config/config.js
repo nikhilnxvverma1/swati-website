@@ -1,15 +1,30 @@
 const path = require('path');
 const rootPath = path.normalize(__dirname + '/..');
 const env = process.env.NODE_ENV || 'development';
-const mysqlDefaultPort = 3000;
+
+const database ={
+	development:"swati-website-dev",
+	test:"swati-website-test",
+	production:"swati-website-prod"
+}
+
+//environment specific object
+const dbOptions={
+	database:database[env], // as per environment
+	username:"swati",
+	password:"Coolermaster1", // TODO should be imported from elsewhere outside of code. But no biggie for development purposes.
+	port:3306, // default for mysql
+	dialect:"mysql"
+}
+
 const config = {
   development: {
     root: rootPath,
     app: {
       name: 'swati-website'
     },
-    port: process.env.PORT || mysqlDefaultPort,
-    db: 'mysql://localhost/swati-website-development'
+    port: process.env.PORT || 3000,
+	db: dbOptions,
   },
 
   test: {
@@ -17,8 +32,8 @@ const config = {
     app: {
       name: 'swati-website'
     },
-    port: process.env.PORT || mysqlDefaultPort,
-    db: 'mysql://localhost/swati-website-test'
+    port: process.env.PORT || 3000,
+    db: dbOptions,
   },
 
   production: {
@@ -26,8 +41,8 @@ const config = {
     app: {
       name: 'swati-website'
     },
-    port: process.env.PORT || mysqlDefaultPort,
-    db: 'mysql://localhost/swati-website-production'
+    port: process.env.PORT || 3000,
+    db: dbOptions,
   }
 };
 
