@@ -1,6 +1,3 @@
-$outer-left-margin : 300px;
-$outer-right-margin : 300px;
-
 body{
 	padding-left:0px;
 	padding-right:0px;
@@ -40,6 +37,11 @@ a{
 		padding-right:20%;
 	}
 
+	#case-studies{
+		padding-left:200px;
+		padding-right:200px;
+	}
+
 	footer{
 		margin-left:150px;
 		margin-right:150px;
@@ -64,7 +66,49 @@ a{
 		padding-right:5%;
 	}
 
+	#case-studies{
+		padding-left:50px;
+		padding-right:50px;
+	}
+
 	footer{
+		margin-left:50px;
+		margin-right:50px;
+	}
+}
+
+//TODO media query for general small sizes
+
+
+@media only screen and (min-width:1051px){
+	.case-study-item{
+		width:47%;
+		display: inline-block;
+	}
+	.item-left{
+		padding-right:20px;
+		float:left;
+	}
+	.item-right{
+		padding-left:20px;
+		margin-top:100px;
+	}
+}
+@media only screen and (max-width:1050px){
+	.case-study-item{
+		width:100%;
+		margin:auto;
+		margin-bottom:100px;
+		display: block;
+	}
+	.item-left{
+		padding-right:0px;
+	}
+	.item-right{
+		padding-left:0px;
+	}
+
+	.outer-margin-offset{
 		margin-left:50px;
 		margin-right:50px;
 	}
@@ -147,20 +191,8 @@ p.sub-text{
 }
 
 #case-studies{
-	padding-left:200px;
-	padding-right:200px;
-	.item-left{
-		padding-right:20px;
-		float:left;
-	}
-	.item-right{
-		padding-left:20px;
-		margin-top:100px;
-	}
 	.case-study-item{
-		width:47%;
 		
-		display: inline-block;
 		img{
 			width:100%;
 			height: auto;
