@@ -60,12 +60,37 @@ a {
     padding-left: 20px;
     margin-top: 100px; } }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1050px) and (min-width: 836px) {
   .case-study-item {
     width: 100%;
     margin: auto;
     margin-bottom: 100px;
     display: block; }
+  .item-left {
+    padding-right: 0px; }
+  .item-right {
+    padding-left: 0px; }
+  .outer-margin-offset {
+    margin-left: 50px;
+    margin-right: 50px; } }
+
+@media only screen and (max-width: 835px) {
+  #intro-brief {
+    padding-left: 5%;
+    padding-right: 5%; }
+  .intro-details {
+    padding-left: 5%;
+    padding-right: 5%; }
+  #case-studies {
+    padding-left: 0px;
+    padding-right: 0px; }
+  .case-study-item {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 60px;
+    display: block; }
+    .case-study-item h4, .case-study-item h2, .case-study-item h3 {
+      margin-left: 50px; }
   .item-left {
     padding-right: 0px; }
   .item-right {

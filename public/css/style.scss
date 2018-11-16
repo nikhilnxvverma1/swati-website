@@ -77,9 +77,6 @@ a{
 	}
 }
 
-//TODO media query for general small sizes
-
-
 @media only screen and (min-width:1051px){
 	.case-study-item{
 		width:47%;
@@ -94,13 +91,54 @@ a{
 		margin-top:100px;
 	}
 }
-@media only screen and (max-width:1050px){
+@media only screen and (max-width:1050px) and (min-width:836px){
 	.case-study-item{
 		width:100%;
 		margin:auto;
 		margin-bottom:100px;
 		display: block;
 	}
+	.item-left{
+		padding-right:0px;
+	}
+	.item-right{
+		padding-left:0px;
+	}
+
+	.outer-margin-offset{
+		margin-left:50px;
+		margin-right:50px;
+	}
+}
+
+// small sizes
+@media only screen and (max-width:835px){
+
+	#intro-brief{
+		padding-left:5%;
+		padding-right:5%;
+	}
+
+	.intro-details{
+		padding-left:5%;
+		padding-right:5%;
+	}
+
+	#case-studies{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	.case-study-item{
+		width:100%;
+		margin:auto;
+		margin-bottom:60px;
+		display: block;
+
+		h4,h2,h3{
+			margin-left:50px;
+		}
+	}
+	
 	.item-left{
 		padding-right:0px;
 	}
