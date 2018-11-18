@@ -1,10 +1,25 @@
 <header class="outer-margin-offset">
 	<nav>
 
-		<a id="side-menu-hamburger" >
+		<a id="sidebar-open" onclick="openSidebar()" >
 			<img src="/img/ic_menu.svg"/>
 		</a>
 
+		<ul id="sidebar">
+			
+			<li class="{{#if activeLink.work}}active{{/if}}"><a href="/">work</a></li>
+			<li class="{{#if activeLink.about}}active{{/if}}"><a href="/about">about</a></li>
+			<li><a class="" href="https://www.linkedin.com/in/swatisoni1">resume</a></li>
+			<li>
+				<a id="contact" class="mini-left-gap" href="mailto:hello@swatisoni.com?Subject=Hello%20Swati" target="_top">
+					contact
+				</a>
+			</li>
+		</ul>
+		<a id="sidebar-close" onclick="closeSidebar()" >
+				<img src="/img/ic_close.svg"/>
+		</a>
+		
 		<div id="logo-container">
 			<!-- Consider using https -->
 			<a href="http://www.swatisoni.com">
@@ -16,10 +31,10 @@
 			<li><a class="nav-link {{#if activeLink.about}}active{{/if}}" href="/about">about</a></li>
 			<li><a class="nav-link" href="https://www.linkedin.com/in/swatisoni1">linked in</a></li>
 			<li>
-					<a id="contact-email" class="mini-left-gap" href="mailto:hello@swatisoni.com?Subject=Hello%20Swati" target="_top">
-						hello@swatisoni.com
-					</a>
-				</li>
+				<a id="contact-email" class="mini-left-gap" href="mailto:hello@swatisoni.com?Subject=Hello%20Swati" target="_top">
+					hello@swatisoni.com
+				</a>
+			</li>
 		</ul>
 	</nav>
 	<!-- Clear the float -->

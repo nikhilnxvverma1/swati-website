@@ -19,13 +19,51 @@ header {
   margin-top: 25px;
   margin-bottom: 25px; }
 
+#sidebar {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  margin-top: 0px;
+  padding-left: 0px;
+  padding-top: 60px;
+  transition: 0.5s; }
+  #sidebar li {
+    display: block;
+    list-style: none;
+    padding: 10px 20px 10px 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: capitalize; }
+    #sidebar li a {
+      color: #808080;
+      text-decoration: none; }
+    #sidebar li a:hover {
+      color: #f2f2f2; }
+  #sidebar li.active {
+    border-left: 7px solid white; }
+    #sidebar li.active a {
+      color: white; }
+
 #logo {
   width: 200px;
   padding-top: 18px;
   float: left; }
 
-#side-menu-hamburger {
+#sidebar-open {
   display: none; }
+
+#sidebar-close {
+  position: fixed;
+  left: 180px;
+  display: none; }
+  #sidebar-close img {
+    width: 20px;
+    height: auto; }
 
 header nav ul {
   float: right; }
@@ -277,9 +315,9 @@ footer nav {
         width: 160px; }
   #horizontal-nav-links {
     display: none; }
-  #side-menu-hamburger {
+  #sidebar-open {
     display: block; }
-    #side-menu-hamburger img {
+    #sidebar-open img {
       width: 18px;
       height: auto;
       position: absolute;
