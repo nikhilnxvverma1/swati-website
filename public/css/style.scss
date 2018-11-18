@@ -473,4 +473,26 @@ footer nav{
 		margin-left:50px;
 		margin-right:50px;
 	}
+
+	footer{
+		text-align: center;
+		margin-left:25px;
+		margin-right:25px;
+		margin-bottom:50px;
+		nav{
+			position:relative;
+			top:-30px;
+			float:none;
+			.social-links li{
+				padding-right:15px;
+			}
+		}
+
+		#copyright-notice{
+			position:relative;
+			float:none;
+			top:40px;
+			display: block;
+		}
+	}
 }
