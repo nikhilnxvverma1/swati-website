@@ -15,98 +15,17 @@ h3 {
 a {
   color: #FE283D; }
 
-@media only screen and (min-width: 1501px) {
-  .outer-margin-offset {
-    margin-left: 300px;
-    margin-right: 300px; }
-  #intro-brief {
-    padding-left: 25%;
-    padding-right: 25%; }
-  .intro-details {
-    padding-left: 20%;
-    padding-right: 20%; }
-  #case-studies {
-    padding-left: 200px;
-    padding-right: 200px; }
-  footer {
-    margin-left: 150px;
-    margin-right: 150px; } }
-
-@media only screen and (max-width: 1500px) {
-  .outer-margin-offset {
-    margin-left: 100px;
-    margin-right: 100px; }
-  #intro-brief {
-    padding-left: 15%;
-    padding-right: 15%; }
-  .intro-details {
-    padding-left: 5%;
-    padding-right: 5%; }
-  #case-studies {
-    padding-left: 50px;
-    padding-right: 50px; }
-  footer {
-    margin-left: 50px;
-    margin-right: 50px; } }
-
-@media only screen and (min-width: 1051px) {
-  .case-study-item {
-    width: 47%;
-    display: inline-block; }
-  .item-left {
-    padding-right: 20px;
-    float: left; }
-  .item-right {
-    padding-left: 20px;
-    margin-top: 100px; } }
-
-@media only screen and (max-width: 1050px) and (min-width: 836px) {
-  .case-study-item {
-    width: 100%;
-    margin: auto;
-    margin-bottom: 100px;
-    display: block; }
-  .item-left {
-    padding-right: 0px; }
-  .item-right {
-    padding-left: 0px; }
-  .outer-margin-offset {
-    margin-left: 50px;
-    margin-right: 50px; } }
-
-@media only screen and (max-width: 835px) {
-  #intro-brief {
-    padding-left: 5%;
-    padding-right: 5%; }
-  .intro-details {
-    padding-left: 5%;
-    padding-right: 5%; }
-  #case-studies {
-    padding-left: 0px;
-    padding-right: 0px; }
-  .case-study-item {
-    width: 100%;
-    margin: auto;
-    margin-bottom: 60px;
-    display: block; }
-    .case-study-item h4, .case-study-item h2, .case-study-item h3 {
-      margin-left: 50px; }
-  .item-left {
-    padding-right: 0px; }
-  .item-right {
-    padding-left: 0px; }
-  .outer-margin-offset {
-    margin-left: 50px;
-    margin-right: 50px; } }
-
 header {
   margin-top: 25px;
   margin-bottom: 25px; }
 
 #logo {
-  float: left;
   width: 200px;
-  padding-top: 18px; }
+  padding-top: 18px;
+  float: left; }
+
+#side-menu-hamburger {
+  display: none; }
 
 header nav ul {
   float: right; }
@@ -286,3 +205,107 @@ footer nav {
   border-left: 1px black solid;
   padding-left: 15px;
   text-decoration: none; }
+
+@media only screen and (min-width: 1501px) {
+  .outer-margin-offset {
+    margin-left: 300px;
+    margin-right: 300px; }
+  #intro-brief {
+    padding-left: 25%;
+    padding-right: 25%; }
+  .intro-details {
+    padding-left: 20%;
+    padding-right: 20%; }
+  #case-studies {
+    padding-left: 200px;
+    padding-right: 200px; }
+  footer {
+    margin-left: 150px;
+    margin-right: 150px; } }
+
+@media only screen and (max-width: 1500px) {
+  .outer-margin-offset {
+    margin-left: 100px;
+    margin-right: 100px; }
+  #intro-brief {
+    padding-left: 15%;
+    padding-right: 15%; }
+  .intro-details {
+    padding-left: 5%;
+    padding-right: 5%; }
+  #case-studies {
+    padding-left: 50px;
+    padding-right: 50px; }
+  footer {
+    margin-left: 50px;
+    margin-right: 50px; } }
+
+@media only screen and (min-width: 1051px) {
+  .case-study-item {
+    width: 47%;
+    display: inline-block; }
+  .item-left {
+    padding-right: 20px;
+    float: left; }
+  .item-right {
+    padding-left: 20px;
+    margin-top: 100px; } }
+
+@media only screen and (max-width: 1050px) and (min-width: 836px) {
+  .case-study-item {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+    display: block; }
+  .item-left {
+    padding-right: 0px; }
+  .item-right {
+    padding-left: 0px; }
+  .outer-margin-offset {
+    margin-left: 50px;
+    margin-right: 50px; } }
+
+@media only screen and (max-width: 835px) {
+  #logo-container {
+    padding-top: 18px;
+    text-align: center;
+    width: 100%;
+    display: block; }
+    #logo-container a {
+      display: inline-block; }
+      #logo-container a #logo {
+        width: 160px; }
+  #horizontal-nav-links {
+    display: none; }
+  #side-menu-hamburger {
+    display: block; }
+    #side-menu-hamburger img {
+      width: 18px;
+      height: auto;
+      position: absolute;
+      top: 60px;
+      left: 30px; }
+  #intro-brief {
+    padding-left: 5%;
+    padding-right: 5%; }
+  .intro-details {
+    padding-left: 5%;
+    padding-right: 5%; }
+  #case-studies {
+    padding-left: 0px;
+    padding-right: 0px; }
+  .case-study-item {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 60px;
+    display: block; }
+    .case-study-item h4, .case-study-item h2, .case-study-item h3 {
+      margin-left: 50px;
+      margin-right: 50px; }
+  .item-left {
+    padding-right: 0px; }
+  .item-right {
+    padding-left: 0px; }
+  .outer-margin-offset {
+    margin-left: 50px;
+    margin-right: 50px; } }
