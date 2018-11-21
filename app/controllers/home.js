@@ -24,6 +24,23 @@ router.get('/about', (req, res, next) => {
 	});
 });
 
+router.get('/case-study', (req, res, next) => {
+
+	db.CaseStudy.findAll(
+		{
+			where:{
+				id:req.query.id
+			}
+		}
+	).then((caseStudies) => {
+	  res.render('case-study', {
+		caseStudy:caseStudies[0],
+		activeLink:getActiveLinkOn('work'),//case study comes from work
+		layout:"header-body-footer"
+	  });
+	});
+});
+
 function getActiveLinkOn(link){
 	const activeLink={
 		work:false,
