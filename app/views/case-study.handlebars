@@ -3,14 +3,17 @@
  class="case-study-banner">
 
 <div class="case-study-body">
-	<div class="general-margin project-outline minor">
+
+	{{!-- Case Study Summary --}}
+
+	<div class="project-outline minor">
 		<div class="outline-detail">
 			<span class="detail-header minor">start date</span>
 			<span class="detail-value">Nov 2016</span>
 		</div>
 		<div class="outline-detail">
 			<span class="detail-header minor">status</span>
-			<span class="detail-value capitalize">online</span>
+			<span class="detail-value capitalize">{{caseStudy.status}}</span>
 		</div>
 		<div class="outline-detail">
 			<div id="view-site" class="detail-value capitalize"><a href="#">view site</a></div>
@@ -30,7 +33,7 @@
 			</span>
 		</div>
 	</div>
-	<div class="general-margin project-outline major">
+	<div class="project-outline major">
 		<div class="outline-detail major">
 			<div class="detail-header major">project summary</div>
 			<div class="detail-value major">{{caseStudy.projectSummary}}</div>
@@ -49,4 +52,63 @@
 			</div>
 		</div>
 	</div>
+
+	{{!-- Intro and overview --}}
+
+	<h1>{{caseStudy.openingHeader}}-</h1>
+	<h2>{{caseStudy.openingSubText}}</h2>
+	<p>{{caseStudy.introduction}}</p>
+
+	{{!-- Challenge and Roles --}}
+
+	<div id="challenge">
+		<h2 class="highlighted-header">the challenge</h2>
+		<p>{{caseStudy.challenge}}</p>
+	</div>
+	<div id="role">
+		<h2 class="highlighted-header">my role</h2>
+		<p>{{caseStudy.myRolesCommaSeperated}}</p>
+	</div>
+	<div style="clear: both;"></div> <!-- Clear the floats -->
+
+	{{!-- Stage 1 --}}
+
+	<h2>{{caseStudy.stage1Header}}</h2>
+	<p>{{caseStudy.stage1Text}}</p>
+
+	<h3>{{caseStudy.stage1Subheader1}}</h3>
+	<p>{{caseStudy.stage1Subheader1Text}}</p>
+
+	{{!--TODO conditional cannalign lists --}}
+
+	<h3>{{caseStudy.stage1Subheader2}}</h3>
+	<p>{{caseStudy.stage1Subheader2Text}}</p>
+
+	<h3>{{caseStudy.stage1Subheader3}}</h3>
+	<p>{{caseStudy.stage1Subheader3Text}}</p>
+
+	{{!-- Stage 2 --}}
+
+	<h2>{{caseStudy.stage2Header}}</h2>
+	<p>{{caseStudy.stage2Text}}</p>
+
+	{{!-- Stage 3 --}}
+	<h2>{{caseStudy.stage3Header}}</h2>
+	<p>{{caseStudy.stage3Text}}</p>
+
+	<h3>{{caseStudy.stage3Subheader1}}</h3>
+	<p>{{caseStudy.stage3Subheader1Text}}</p>
+
+	<h3>{{caseStudy.stage3Subheader2}}</h3>
+	<p>{{caseStudy.stage3Subheader2Text}}</p>
+
+	<h3>{{caseStudy.stage3Subheader3}}</h3>
+	<p>{{caseStudy.stage3Subheader3Text}}</p>
+
+	{{!-- Conclusion --}}
+
+	<h3>{{caseStudy.conclusion}}</h3>
+	<p>{{caseStudy.conclusionText}}</p>
+
+
 </div>

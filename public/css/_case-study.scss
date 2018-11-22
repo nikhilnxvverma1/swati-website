@@ -1,3 +1,5 @@
+$secondary-color:#E85F64;
+
 .case-study-banner{
 	width:100%;
 	height:auto;
@@ -8,12 +10,14 @@
 	top:-150px;
 	margin-left:200px;
 	margin-right:200px;
+	padding-left:100px;
+	padding-right:100px;
 	background: white;
-}
 
-.general-margin{
-	margin-left:100px;
-	margin-right:100px;
+	p{
+		margin-top:30px;
+		margin-bottom:30px;
+	}
 }
 
 .project-outline{
@@ -26,6 +30,7 @@
 	&.major{
 		padding-bottom:50px;
 		justify-content: flex-start;
+		margin-bottom:50px;
 	}
 	.outline-detail{
 
@@ -78,4 +83,18 @@
 img.micro{
 	width:12px;
 	height:auto;
+}
+
+.highlighted-header{
+	color:$secondary-color;
+	text-transform: uppercase;
+}
+
+#challenge{
+	float:left;
+	width:30%;
+}
+
+#role{
+	float:right;
 }

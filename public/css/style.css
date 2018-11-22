@@ -7,11 +7,12 @@
   top: -150px;
   margin-left: 200px;
   margin-right: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
   background: white; }
-
-.general-margin {
-  margin-left: 100px;
-  margin-right: 100px; }
+  .case-study-body p {
+    margin-top: 30px;
+    margin-bottom: 30px; }
 
 .project-outline {
   line-height: 140px;
@@ -21,7 +22,8 @@
     justify-content: space-between; }
   .project-outline.major {
     padding-bottom: 50px;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    margin-bottom: 50px; }
   .project-outline .outline-detail.major {
     margin-right: 100px; }
   .project-outline .outline-detail .detail-header {
@@ -54,6 +56,17 @@
 img.micro {
   width: 12px;
   height: auto; }
+
+.highlighted-header {
+  color: #E85F64;
+  text-transform: uppercase; }
+
+#challenge {
+  float: left;
+  width: 30%; }
+
+#role {
+  float: right; }
 
 body {
   padding-left: 0px;
