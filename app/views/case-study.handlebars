@@ -1,4 +1,37 @@
-<img src="/img/case-studies/img_cannalignBanner.jpg" alt="" class="banner">
+<img src="/img/case-studies/img_cannalignBanner.jpg"
+ alt="Case Study Banner" 
+ class="case-study-banner">
 
-<h1>{{caseStudy.name}}</h1>
-<h2>{{caseStudy.introduction}}</h2>
+<div class="case-study-body">
+	<div class="general-margin project-outline">
+		<div class="outline-detail">
+			<span class="detail-header minor">start date</span>
+			<span class="detail-value">Nov 2016</span>
+		</div>
+		<div class="outline-detail">
+			<span class="detail-header minor">status</span>
+			<span class="detail-value capitalize">online</span>
+		</div>
+		<div class="outline-detail">
+			<div id="view-site" class="detail-value capitalize"><a href="#">view site</a></div>
+		</div>
+		<div class="outline-detail">
+			<span class="detail-header minor">share</span>
+			<span class="detail-value capitalize">todo</span>
+		</div>
+	</div>
+	<div class="general-margin project-outline">
+		<div class="outline-detail major">
+			<div class="detail-header major">project summary</div>
+			<div class="detail-value major">{{caseStudy.projectSummary}}</div>
+		</div>
+		<div class="outline-detail major">
+			<div class="detail-header major">deliverables</div>
+			<div class="detail-value major">{{caseStudy.deliverables}}</div>
+		</div>
+		<div class="outline-detail major">
+			<div class="detail-header major">client</div>
+			<div class="detail-value major">{{caseStudy.clientName}}</div>
+		</div>
+	</div>
+</div>

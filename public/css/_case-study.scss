@@ -1,4 +1,59 @@
-.banner{
+.case-study-banner{
 	width:100%;
 	height:auto;
+}
+
+.case-study-body{
+	position: relative;
+	top:-150px;
+	margin-left:200px;
+	margin-right:200px;
+	background: white;
+}
+
+.general-margin{
+	margin-left:100px;
+	margin-right:100px;
+}
+
+.project-outline{
+	display: flex;
+	line-height: 140px;
+	border-bottom: 1px solid #C1C1C1;
+	justify-content: space-between;
+	.outline-detail{
+
+		.detail-header{
+			color:#727272;
+			&.minor{
+				text-transform: capitalize;
+			}
+			&.major{
+				text-transform: uppercase;
+				line-height: 75px;
+			}
+			&::after{
+				content: ' - ';
+			}
+		}
+		.detail-value{
+			&.major{
+				line-height: initial;
+			}
+		}
+
+		&.major{
+			width:400px;
+		}
+	}
+
+}
+#view-site{
+	border-bottom:2px solid black;
+	padding-left:30px;
+	padding-right:30px;
+	a{
+		color:black;
+		text-decoration: none;
+	}
 }
