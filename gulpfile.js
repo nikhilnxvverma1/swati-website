@@ -5,7 +5,7 @@ const livereload = require('gulp-livereload');
 const sass = require('gulp-sass');
 
 gulp.task('sass', () => {
-  gulp.src('./public/css/*.scss')
+  gulp.src('./public/css/{*.scss,_*.scss}')
     .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest('./public/css'))
@@ -13,7 +13,7 @@ gulp.task('sass', () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch('./public/css/*.scss', ['sass']);
+  gulp.watch('./public/css/{*.scss,_*.scss}', ['sass']);
 });
 
 gulp.task('develop', () => {
