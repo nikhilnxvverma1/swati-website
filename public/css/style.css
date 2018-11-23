@@ -115,6 +115,32 @@ p.case-study-related.captions {
       width: 49%;
       height: auto; }
 
+#client-remarks {
+  text-align: center;
+  border: 2px solid #E3E3E3;
+  padding: 10px 90px 20px 90px; }
+  #client-remarks > h4 {
+    text-transform: uppercase; }
+  #client-remarks #client-profile > img {
+    height: 90px;
+    margin: auto; }
+  #client-remarks #client-profile img.micro {
+    width: 17px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px; }
+  #client-remarks #client-profile h4 {
+    text-transform: capitalize;
+    margin-bottom: 3px; }
+  #client-remarks #client-profile p {
+    margin-top: 3px; }
+  #client-remarks #client-profile .continued-block {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    height: 90px; }
+
 body {
   padding-left: 0px;
   padding-right: 0px;

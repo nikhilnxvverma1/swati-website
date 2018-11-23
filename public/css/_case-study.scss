@@ -163,3 +163,42 @@ p.case-study-related.captions{
 		}
 	}
 }
+
+#client-remarks{
+	text-align: center;
+	border:2px solid #E3E3E3;
+	padding:10px 90px 20px 90px;
+	>h4{
+		text-transform: uppercase;
+	}
+
+	#client-profile{
+		$profile-pic-height:90px;
+		>img{
+			height:$profile-pic-height;
+			margin:auto;
+		}
+		img.micro{
+			width:17px;
+			margin-left:5px;
+			position: relative;
+			top:2px;
+		
+		}
+		h4{
+			text-transform: capitalize;
+			margin-bottom:3px;
+		}
+		p{
+			margin-top:3px;
+		}
+
+		.continued-block{
+			text-align:left;
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 20px;
+			height: $profile-pic-height;
+		}
+	}
+}

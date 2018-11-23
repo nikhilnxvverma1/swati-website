@@ -16,18 +16,18 @@
 			<span class="detail-value capitalize">{{caseStudy.status}}</span>
 		</div>
 		<div class="outline-detail">
-			<div id="view-site" class="detail-value capitalize"><a href="#">view site</a></div>
+			<div id="view-site" class="detail-value capitalize"><a href={{caseStudy.projectUrl}}>view site</a></div>
 		</div>
 		<div class="outline-detail">
 			<span class="detail-header minor">share</span>
 			<span class="detail-value capitalize">
-				<a href="#">
+				<a href="{{caseStudy.facebookShare}}">
 					<img src="img/ic_facebook_share.svg" alt="Facebook" class="micro">
 				</a>
-				<a href="#">
+				<a href="{{caseStudy.twitterShare}}">
 					<img src="img/ic_twitter.svg" alt="Twitter" class="micro">
 				</a>
-				<a href="#">
+				<a href="{{caseStudy.linkedInShare}}">
 					<img src="img/ic_linkedin.svg" alt="Linked In" class="micro">
 				</a>
 			</span>
@@ -46,7 +46,7 @@
 			<div class="detail-header major">client</div>
 			<div class="detail-value major">
 				{{caseStudy.clientName}}
-				<a href="#">
+				<a href="{{caseStudy.clientLinkedIn}}">
 					<img src="img/ic_linkedin_profile.svg" alt="Linked In" class="micro">
 				</a>
 			</div>
@@ -131,6 +131,24 @@
 
 	<img class="case-study-related" src="{{caseStudy.stage3ClosingImage}}" alt="Stage 3 closing image">
 	<p class="case-study-related captions">{{caseStudy.stage3ClosingImageCaptions}}</p>
+
+	{{!-- Client words --}}
+	<div id="client-remarks">
+		<h4>{{caseStudy.clientRemarksHeader}}</h4>
+		<p>{{caseStudy.clientRemarks}}</p>
+		<div id="client-profile">
+			<img src="{{caseStudy.clientPortfolioPic}}" alt="Client pic">
+			<div class="continued-block">
+				<h4>
+					{{caseStudy.clientName}}
+					<a href="{{caseStudy.clientLinkedIn}}">
+						<img src="img/ic_linkedin_profile.svg" alt="Linked In" class="micro">
+					</a>
+				</h4>
+				<p>{{caseStudy.clientTitleAndPosition}}</p>
+			</div>
+		</div>
+	</div>
 
 	{{!-- Conclusion --}}
 
