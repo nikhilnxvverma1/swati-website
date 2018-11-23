@@ -40,7 +40,7 @@
   .project-outline .outline-detail .detail-value a {
     text-decoration: none; }
     .project-outline .outline-detail .detail-value a img.micro {
-      margin-right: 10px; }
+      margin-left: 5px; }
   .project-outline .outline-detail.major {
     width: 450px;
     display: inline-block; }
@@ -54,12 +54,16 @@
     text-decoration: none; }
 
 img.micro {
-  width: 12px;
+  width: 13px;
   height: auto; }
 
 .highlighted-header {
   color: #E85F64;
   text-transform: uppercase; }
+  .highlighted-header img.micro {
+    width: 17px;
+    height: auto;
+    margin-left: 8px; }
 
 #challenge {
   float: left;
@@ -67,6 +71,49 @@ img.micro {
 
 #role {
   float: right; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.other-case-studies {
+  width: 30%; }
+  .other-case-studies h3 {
+    margin-bottom: 3px; }
+  .other-case-studies p {
+    margin-top: 3px;
+    font-weight: bold;
+    font-size: 1.25em; }
+
+img.case-study-related {
+  width: 100%; }
+
+p.case-study-related.captions {
+  margin-top: 10px;
+  color: #757575; }
+
+#case-study-behance-link img {
+  margin-bottom: 30px;
+  margin-left: 10px;
+  width: 250px;
+  height: auto; }
+
+.moodboards {
+  margin-bottom: 40px; }
+  .moodboards .big {
+    width: 38%;
+    display: inline-block; }
+    .moodboards .big img {
+      width: 100%;
+      height: auto; }
+  .moodboards .small {
+    width: 59%;
+    display: inline-block; }
+    .moodboards .small img {
+      width: 49%;
+      height: auto; }
 
 body {
   padding-left: 0px;

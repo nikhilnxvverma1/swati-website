@@ -1,4 +1,4 @@
-<img src="/img/case-studies/img_cannalignBanner.jpg"
+<img src="{{caseStudy.heroImage}}"
  alt="Case Study Banner" 
  class="case-study-banner">
 
@@ -22,7 +22,7 @@
 			<span class="detail-header minor">share</span>
 			<span class="detail-value capitalize">
 				<a href="#">
-					<img src="img/ic_linkedin.svg" alt="Linked In" class="micro">
+					<img src="img/ic_facebook_share.svg" alt="Facebook" class="micro">
 				</a>
 				<a href="#">
 					<img src="img/ic_twitter.svg" alt="Twitter" class="micro">
@@ -47,7 +47,7 @@
 			<div class="detail-value major">
 				{{caseStudy.clientName}}
 				<a href="#">
-					<img src="img/ic_linkedin.svg" alt="Linked In" class="micro">
+					<img src="img/ic_linkedin_profile.svg" alt="Linked In" class="micro">
 				</a>
 			</div>
 		</div>
@@ -87,10 +87,16 @@
 	<h3>{{caseStudy.stage1Subheader3}}</h3>
 	<p>{{caseStudy.stage1Subheader3Text}}</p>
 
+	<img class="case-study-related" src="{{caseStudy.stage1ClosingImage}}" alt="Stage 1 closing image">
+	<p class="case-study-related captions">{{caseStudy.stage1ClosingImageCaption}}</p>
+
 	{{!-- Stage 2 --}}
 
 	<h2>{{caseStudy.stage2Header}}</h2>
 	<p>{{caseStudy.stage2Text}}</p>
+
+	<img class="case-study-related" src="{{caseStudy.stage2Image}}" alt="Stage 2 closing image">
+	<p class="case-study-related captions">{{caseStudy.stage2ImageCaptions}}</p>
 
 	{{!-- Stage 3 --}}
 	<h2>{{caseStudy.stage3Header}}</h2>
@@ -99,16 +105,52 @@
 	<h3>{{caseStudy.stage3Subheader1}}</h3>
 	<p>{{caseStudy.stage3Subheader1Text}}</p>
 
+	{{!-- Moodboards --}}
+	<div class="moodboards">
+		<div class="big">
+			<img src="{{caseStudy.stage3MoodboardImage1}}" alt="Moodboard 1">
+		</div>
+		<div class="small">
+			<img src="{{caseStudy.stage3MoodboardImage2}}" alt="Moodboard 2">
+			<img src="{{caseStudy.stage3MoodboardImage3}}" alt="Moodboard 3">
+			<img src="{{caseStudy.stage3MoodboardImage4}}" alt="Moodboard 4">
+			<img src="{{caseStudy.stage3MoodboardImage5}}" alt="Moodboard 5">
+		</div>
+	</div>
+	<p class="case-study-related captions">{{caseStudy.stage3MoodboardCaptions}}</p>
+
 	<h3>{{caseStudy.stage3Subheader2}}</h3>
 	<p>{{caseStudy.stage3Subheader2Text}}</p>
 
 	<h3>{{caseStudy.stage3Subheader3}}</h3>
 	<p>{{caseStudy.stage3Subheader3Text}}</p>
 
+	<a id="case-study-behance-link" href="{{caseStudy.url}}">
+		<img src="img/case-studies/btn_Behance.png" alt="Behance link">
+	</a>
+
+	<img class="case-study-related" src="{{caseStudy.stage3ClosingImage}}" alt="Stage 3 closing image">
+	<p class="case-study-related captions">{{caseStudy.stage3ClosingImageCaptions}}</p>
+
 	{{!-- Conclusion --}}
 
 	<h3>{{caseStudy.conclusion}}</h3>
 	<p>{{caseStudy.conclusionText}}</p>
 
+	{{!-- Previous and Next case studies --}}
+	
+	<div class="other-case-studies float-left">
+		<h3 class="highlighted-header">
+			view on behance
+			<img class="micro" src="img/ic_open_tab.svg" alt="Opens in new tab">
+		</h3>
+		<p>Appinventive- Branding India's leading mobile app development company (TODO)</p>
+	</div>
+
+	<div class="other-case-studies float-right">
+		<h3 class="highlighted-header">read next case study</h3>
+		<p>VEME- Empowering the future of social media and decentralised media on blockchain (TODO)</p>
+	</div>
+	<div style="clear: both;"></div> <!-- Clear the floats -->
 
 </div>
