@@ -7,20 +7,23 @@ module.exports = (app) => {
 };
 
 router.get('/', (req, res, next) => {
-  db.Article.findAll().then((articles) => {
-    res.render('index', {
-		activeLink:getActiveLinkOn('work'),
-		layout:"header-body-footer"
-    });
-  });
+	db.CaseStudy.findAll(
+		{
+			order:["startDate"]
+		}
+	).then((caseStudies) => {
+		res.render('index', {
+			caseStudies:caseStudies,
+			activeLink:getActiveLinkOn('work'),
+			layout:"header-body-footer"
+		});
+	});
 });
 
 router.get('/about', (req, res, next) => {
-	db.Article.findAll().then((articles) => {
-	  res.render('about', {
+	res.render('about', {
 		activeLink:getActiveLinkOn('about'),
 		layout:"header-body-footer"
-	  });
 	});
 });
 
@@ -53,6 +56,7 @@ router.get('/case-study', (req, res, next) => {
 		res.render('case-study', {
 			previous:previous,
 			caseStudy:thisCaseStudy,
+			roles:arrayFrom(thisCaseStudy.myRolesCommaSeperated),
 			next:next,
 			activeLink:getActiveLinkOn('work'),//case study comes from work
 			layout:"header-body-footer"
@@ -75,4 +79,12 @@ function getActiveLinkOn(link){
 		break;
 	}
 	return activeLink;
+}
+
+function arrayFrom(csv){
+	const delemitedValues = csv.split(",");
+	for(var i =0;i<delemitedValues.length;i++){
+		delemitedValues[i] = delemitedValues[i].trim();
+	}
+	return delemitedValues;
 }

@@ -67,7 +67,11 @@
 	</div>
 	<div id="role">
 		<h2 class="highlighted-header">my role</h2>
-		<p>{{caseStudy.myRolesCommaSeperated}}</p>
+		<ul>
+		{{#each roles}}
+			<li>{{this}}</li>
+		{{/each}}
+		</ul>
 	</div>
 	<div style="clear: both;"></div> <!-- Clear the floats -->
 

@@ -97,11 +97,17 @@ img.micro{
 
 #challenge{
 	float:left;
-	width:30%;
+	width:60%;
 }
 
 #role{
 	float:right;
+	ul{
+		padding-left:20px;
+		li{
+			list-style-image: url("../img/ic_check.svg");
+		}
+	}
 }
 
 .float-left{
