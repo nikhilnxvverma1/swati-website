@@ -145,6 +145,36 @@ p.case-study-related.captions {
     margin-left: 20px;
     height: 90px; }
 
+.persona {
+  background-color: #F5F5F5;
+  width: auto;
+  height: 100%;
+  padding: 20px 30px 20px 30px; }
+  .persona .profile {
+    display: inline-block;
+    width: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 500px;
+    padding-left: 25px;
+    padding-bottom: 20px; }
+    .persona .profile h4, .persona .profile h5 {
+      color: white;
+      margin-top: 0px;
+      margin-bottom: 0px; }
+  .persona .detail {
+    display: inline-block;
+    width: 60%;
+    padding-left: 20px;
+    vertical-align: top; }
+    .persona .detail .lists-container {
+      display: flex; }
+      .persona .detail .lists-container > div {
+        width: 45%;
+        margin-right: 30px; }
+  .persona .quote {
+    margin-left: 20px; }
+
 body {
   padding-left: 0px;
   padding-right: 0px;

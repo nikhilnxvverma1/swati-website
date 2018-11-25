@@ -57,6 +57,8 @@ router.get('/case-study', (req, res, next) => {
 			previous:previous,
 			caseStudy:thisCaseStudy,
 			roles:arrayFrom(thisCaseStudy.myRolesCommaSeperated),
+			goals:arrayFrom(thisCaseStudy.inletGoalsCommaSeperated),
+			painPoints:arrayFrom(thisCaseStudy.inletPainPointsCommaSeperated),
 			next:next,
 			activeLink:getActiveLinkOn('work'),//case study comes from work
 			layout:"header-body-footer"
