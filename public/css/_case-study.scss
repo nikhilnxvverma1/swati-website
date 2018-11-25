@@ -134,7 +134,7 @@ img.case-study-related{
 	width:100%;
 }
 
-p.case-study-related.captions{
+p.captions{
 	margin-top:10px;
 	color:#757575;
 }
@@ -251,5 +251,32 @@ p.case-study-related.captions{
 
 	.quote{
 		margin-left:20px;
+	}
+}
+
+.cannalign-lists-container{
+	display: flex;
+	>div{
+		text-align: left;
+		margin-right:100px;
+		width:200px;
+		text-align: center;
+		>p.captions{
+			margin-top:5px;
+			margin-bottom:5px;
+		}
+		>ul{
+			line-height:40px;
+			padding:0;
+			li{
+				list-style: none;
+				
+			}
+		}
+	}
+	.highlighted{
+		background-color: #F9DB6C;
+		padding:5px;
+		
 	}
 }
