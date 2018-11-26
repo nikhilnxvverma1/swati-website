@@ -13,10 +13,19 @@ $secondary-color:#E85F64;
 	padding-left:100px;
 	padding-right:100px;
 	background: white;
-
+	font-family: 'Muli', sans-serif;
+	line-height: 30px;
+	font-kerning: normal;
+	font-weight: lighter;
+	font-size:1.2em;
+	
 	p{
 		margin-top:30px;
 		margin-bottom:30px;
+	}
+
+	h2{
+		margin-bottom:50px;
 	}
 }
 
@@ -256,9 +265,9 @@ p.captions{
 
 .cannalign-lists-container{
 	display: flex;
+	justify-content: space-between;
 	>div{
 		text-align: left;
-		margin-right:100px;
 		width:200px;
 		text-align: center;
 		>p.captions{

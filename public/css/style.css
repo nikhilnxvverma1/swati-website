@@ -9,10 +9,17 @@
   margin-right: 200px;
   padding-left: 100px;
   padding-right: 100px;
-  background: white; }
+  background: white;
+  font-family: 'Muli', sans-serif;
+  line-height: 30px;
+  font-kerning: normal;
+  font-weight: lighter;
+  font-size: 1.2em; }
   .case-study-body p {
     margin-top: 30px;
     margin-bottom: 30px; }
+  .case-study-body h2 {
+    margin-bottom: 50px; }
 
 .project-outline {
   line-height: 140px;
@@ -176,10 +183,10 @@ p.captions {
     margin-left: 20px; }
 
 .cannalign-lists-container {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
   .cannalign-lists-container > div {
     text-align: left;
-    margin-right: 100px;
     width: 200px;
     text-align: center; }
     .cannalign-lists-container > div > p.captions {
