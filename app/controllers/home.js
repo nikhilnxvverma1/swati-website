@@ -53,7 +53,7 @@ router.get('/case-study', (req, res, next) => {
 		}
 
 		// render the case study page
-		res.render('case-study', {
+		res.render(thisCaseStudy.name, {
 			previous:previous,
 			caseStudy:thisCaseStudy,
 			roles:arrayFrom(thisCaseStudy.myRolesCommaSeperated),
@@ -61,7 +61,7 @@ router.get('/case-study', (req, res, next) => {
 			painPoints:arrayFrom(thisCaseStudy.inletPainPointsCommaSeperated),
 			next:next,
 			activeLink:getActiveLinkOn('work'),//case study comes from work
-			layout:"header-body-footer"
+			layout:"case-study"
 		});
 	});
 });

@@ -1,0 +1,30 @@
+{{!-- Persona --}}
+<div class="persona">
+	<div class="profile" style="background-image: url('../{{caseStudy.inletImage}}');">
+		<h4>{{caseStudy.inletPersonaName}}</h4>
+		<h5>{{caseStudy.inletPersonaAge}}, {{caseStudy.inletPersonaProfession}}</h5>
+		<h5>{{caseStudy.inletPersonaAddress}}</h5>
+	</div>
+	<div class="detail">
+		<p class="quote">
+			{{caseStudy.inletQuote}}
+		</p>
+		<p class="description">
+			{{caseStudy.inletText}}
+		</p>
+		<div class="lists-container">
+			<div>
+				<h4 class="uppercase">goals</h4>
+				<ul>
+					{{#listCSV caseStudy.inletGoalsCommaSeperated}}{{/listCSV}}
+				</ul>
+			</div>
+			<div>
+				<h4 class="uppercase">pain points</h4>
+				<ul>
+					{{#listCSV caseStudy.inletPainPointsCommaSeperated}}{{/listCSV}}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

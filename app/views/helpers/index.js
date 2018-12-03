@@ -1,4 +1,5 @@
 var i18n=require('i18n');
+var hbs = require('handlebars');
 
 module.exports = function() {
 	
@@ -16,6 +17,17 @@ module.exports = function() {
 			return options.inverse(this);
 		}
 	};
+
+	// converts a comma separated string value into a chunk of html <li> list elements
+	// {{#listCSV csv}} 
+	_helpers.listCSV = function (csv){
+		const array = arrayFrom(csv);
+		var list = '';
+		for(var i = 0;i<array.length;i++){
+			list+= '<li>' + array[i] + '</li>';
+		}
+		return new hbs.SafeString(list);
+	}
 	
 	//i18n internationalization
 	//register hbs helpers in res.locals' context which provides this.locale
@@ -34,3 +46,12 @@ module.exports = function() {
 	
 	return _helpers;
 };
+
+
+function arrayFrom(csv){
+	const delemitedValues = csv.split(",");
+	for(var i =0;i<delemitedValues.length;i++){
+		delemitedValues[i] = delemitedValues[i].trim();
+	}
+	return delemitedValues;
+}
