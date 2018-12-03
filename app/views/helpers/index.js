@@ -19,7 +19,7 @@ module.exports = function() {
 	};
 
 	// converts a comma separated string value into a chunk of html <li> list elements
-	// {{#listCSV csv}} 
+	// {{listCSV csv}} 
 	_helpers.listCSV = function (csv){
 		const array = arrayFrom(csv);
 		var list = '';
@@ -27,6 +27,16 @@ module.exports = function() {
 			list+= '<li>' + array[i] + '</li>';
 		}
 		return new hbs.SafeString(list);
+	}
+
+	// converts a milliseconds value into <MON YYYY> format for example Nov 2017
+	// {{monyyyy date}}
+	_helpers.monyyyy = function(milliseconds){
+		const date = new Date(milliseconds);
+		const monthNumber = date.getMonth();
+		const monthName = monthNameFrom(monthNumber);
+		const year = date.getFullYear();
+		return (monthName + ' ' + year);
 	}
 	
 	//i18n internationalization
@@ -54,4 +64,22 @@ function arrayFrom(csv){
 		delemitedValues[i] = delemitedValues[i].trim();
 	}
 	return delemitedValues;
+}
+
+function monthNameFrom(monthNumber){
+	switch(monthNumber){
+		case 0: return "Jan";
+		case 1: return "Feb";
+		case 2: return "Mar";
+		case 3: return "Apr";
+		case 4: return "May";
+		case 5: return "Jun";
+		case 6: return "Jul";
+		case 7: return "Aug";
+		case 8: return "Sep";
+		case 9: return "Oct";
+		case 10: return "Nov";
+		case 11: return "Dec";
+	}
+	return "UNKOWN MONTH";
 }
