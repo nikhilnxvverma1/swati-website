@@ -1,137 +1,145 @@
 {{!-- Intro and overview --}}
 
-<h1>{{caseStudy.openingHeader}}-</h1>
-<h2>{{caseStudy.openingSubText}}</h2>
-<p>{{caseStudy.introduction}}</p>
+<h1>{{__ 'cannalign.openingHeader'}}</h1>
+<h2>{{__ 'cannalign.openingSubText'}}</h2>
+<p>{{__ 'cannalign.introduction'}}</p>
+
+
 
 {{!-- Challenges and roles --}}
 {{>challenges-roles}}
 
+
+
 {{!-- Stage 1 --}}
 
-<h2>{{caseStudy.stage1Header}}</h2>
-<p>{{caseStudy.stage1Text}}</p>
+<h2>{{__ 'cannalign.stage1.header'}}</h2>
+<p>{{__ 'cannalign.stage1.text'}}</p>
+<h3>{{__ 'cannalign.stage1.subHeader1'}}</h3>
+<p>{{__ 'cannalign.stage1.subHeader1.text'}}</p>
 
-<h3>{{caseStudy.stage1Subheader1}}</h3>
-<p>{{caseStudy.stage1Subheader1Text}}</p>
 
 {{!--Cannalign table lists --}}
 <div class="cannalign-lists-container">
 	<div>
-		<h4 class="uppercase">culture</h4>
-		<p class="captions">How the community would describe us?</p>
+		<h4 class="uppercase">{{__ 'cannalign.table.culture.header'}}</h4>
+		<p class="captions">{{__ 'cannalign.table.culture.subHeader'}}</p>
 		<ul>
-			<li>accessible</li>
-			<li><span class="highlighted">information rich</span></li>
-			<li>open</li>
-			<li><span class="highlighted">local</span></li>
+			<li>{{__ 'cannalign.table.culture.accessible'}}</li>
+			<li><span class="highlighted">{{__ 'cannalign.table.culture.informationRich'}}</span></li>
+			<li>{{__ 'cannalign.table.culture.open'}}</li>
+			<li><span class="highlighted">{{__ 'cannalign.table.culture.local'}}</span></li>
 		</ul>
 	</div>
 	<div>
-		<h4 class="uppercase">target group</h4>
-		<p class="captions">How would we describe our target audience?</p>
+		<h4 class="uppercase">{{__ 'cannalign.table.targetGroup.header'}}</h4>
+		<p class="captions">{{__ 'cannalign.table.targetGroup.subHeader'}}</p>
 		<ul>
-			<li>young</li>
-			<li>open minded</li>
-			<li><span class="highlighted">searching</span></li>
-			<li>adaptable</li>
+			<li>{{__ 'cannalign.table.targetGroup.young'}}</li>
+			<li>{{__ 'cannalign.table.targetGroup.openMinded'}}</li>
+			<li><span class="highlighted">{{__ 'cannalign.table.targetGroup.searching'}}</span></li>
+			<li>{{__ 'cannalign.table.targetGroup.adaptable'}}</li>
 		</ul>
 	</div>
 	<div>
-		<h4 class="uppercase">voice</h4>
-		<p class="captions">How do we want to sound to others?</p>
+		<h4 class="uppercase">{{__ 'cannalign.table.voice.header'}}</h4>
+		<p class="captions">{{__ 'cannalign.table.voice.subHeader'}}</p>
 		<ul>
-			<li><span class="highlighted">trustworthy</span></li>
-			<li>serious</li>
-			<li><span class="highlighted">community</span></li>
-			<li><span class="highlighted">abundant</span></li>
+			<li><span class="highlighted">{{__ 'cannalign.table.voice.trustworthy'}}</span></li>
+			<li>{{__ 'cannalign.table.voice.serious'}}</li>
+			<li><span class="highlighted">{{__ 'cannalign.table.voice.community'}}</span></li>
+			<li><span class="highlighted">{{__ 'cannalign.table.voice.abundant'}}</span></li>
 		</ul>
 	</div>
 	<div>
-		<h4 class="uppercase">feeling</h4>
-		<p class="captions">How to others feel about us after being in contact with us?</p>
+		<h4 class="uppercase">{{__ 'cannalign.table.feeling.header'}}</h4>
+		<p class="captions">{{__ 'cannalign.table.feeling.subHeader'}}</p>
 		<ul>
-			<li><span class="highlighted">happy</span></li>
-			<li>involved</li>
-			<li><span class="highlighted">supported</span></li>
+			<li><span class="highlighted">{{__ 'cannalign.table.feeling.happy'}}</span></li>
+			<li>{{__ 'cannalign.table.feeling.involved'}}</li>
+			<li><span class="highlighted">{{__ 'cannalign.table.feeling.supported'}}</span></li>
 		</ul>
 	</div>
 	<div>
-		<h4 class="uppercase">impact</h4>
-		<p class="captions">How we are different from others?</p>
+		<h4 class="uppercase">{{__ 'cannalign.table.impact.header'}}</h4>
+		<p class="captions">{{__ 'cannalign.table.impact.subHeader'}}</p>
 		<ul>
-			<li>expanding horizons</li>
-			<li><span class="highlighted">extended community</span></li>
+			<li>{{__ 'cannalign.table.impact.expandingHorizons'}}</li>
+			<li><span class="highlighted">{{__ 'cannalign.table.impact.extendedCommunity'}}</span></li>
 		</ul>
 	</div>
 </div>
 <p class="captions">
-	<span class="bold">Product USP</span>: Local - Community based, Information Rich, Trustworthy, For everyone inclusive.
+	{{{__ 'cannalign.table.captions'}}}
 </p>
 
-<h3>{{caseStudy.stage1Subheader2}}</h3>
-<p>{{caseStudy.stage1Subheader2Text}}</p>
+<h3>{{__ 'cannalign.stage1.subheader2'}}</h3>
+<p>{{__ 'cannalign.stage1.subheader2.text'}}</p>
+
 
 {{!-- Persona --}}
 {{>persona}}
 
-<div style="clear: both;"></div> <!-- Clear the floats -->
-<p class="captions">
-	{{caseStudy.inletCaptions}}
-</p>
 
-<h3>{{caseStudy.stage1Subheader3}}</h3>
-<p>{{caseStudy.stage1Subheader3Text}}</p>
+<h3>{{__ 'cannalign.stage1.subheader3'}}</h3>
+<p>{{__ 'cannalign.stage1.subheader3.text'}}</p>
+<img class="case-study-related" src="img/case-studies/img_mindmap.jpg" alt="Stage 1 closing image">
+<p class="captions">{{__ 'cannalign.stage1.closingImageCaptions'}}</p>
 
-<img class="case-study-related" src="{{caseStudy.stage1ClosingImage}}" alt="Stage 1 closing image">
-<p class="captions">{{caseStudy.stage1ClosingImageCaption}}</p>
+
 
 {{!-- Stage 2 --}}
 
-<h2>{{caseStudy.stage2Header}}</h2>
-<p>{{caseStudy.stage2Text}}</p>
+<h2>{{__ 'cannalign.stage2.header'}}</h2>
+<p>{{__ 'cannalign.stage2.text'}}</p>
+<img class="case-study-related" src="img/case-studies/img_wireframe.jpg" alt="Stage 2 closing image">
+<p class="captions">{{__ 'cannalign.stage2.imageCaptions'}}</p>
 
-<img class="case-study-related" src="{{caseStudy.stage2Image}}" alt="Stage 2 closing image">
-<p class="captions">{{caseStudy.stage2ImageCaptions}}</p>
+
 
 {{!-- Stage 3 --}}
-<h2>{{caseStudy.stage3Header}}</h2>
-<p>{{caseStudy.stage3Text}}</p>
 
-<h3>{{caseStudy.stage3Subheader1}}</h3>
-<p>{{caseStudy.stage3Subheader1Text}}</p>
+<h2>{{__ 'cannalign.stage3.header'}}</h2>
+<h3>{{__ 'cannalign.stage3.subheader1'}}</h3>
+<p>{{__ 'cannalign.stage3.subheader1.text'}}</p>
 
 {{!-- Moodboards --}}
 <div class="moodboards">
 	<div class="big">
-		<img src="{{caseStudy.stage3MoodboardImage1}}" alt="Moodboard 1">
+		<img src="img/case-studies/img_01.jpg" alt="Moodboard 1">
 	</div>
 	<div class="small">
-		<img src="{{caseStudy.stage3MoodboardImage2}}" alt="Moodboard 2">
-		<img src="{{caseStudy.stage3MoodboardImage3}}" alt="Moodboard 3">
-		<img src="{{caseStudy.stage3MoodboardImage4}}" alt="Moodboard 4">
-		<img src="{{caseStudy.stage3MoodboardImage5}}" alt="Moodboard 5">
+		<img src="img/case-studies/img_02.jpg" alt="Moodboard 2">
+		<img src="img/case-studies/img_03.jpg" alt="Moodboard 3">
+		<img src="img/case-studies/img_04.jpg" alt="Moodboard 4">
+		<img src="img/case-studies/img_05.jpg" alt="Moodboard 5">
 	</div>
 </div>
-<p class="captions">{{caseStudy.stage3MoodboardCaptions}}</p>
+<p class="captions">{{__ 'cannalign.stage3.moodboardCaptions'}}</p>
 
-<h3>{{caseStudy.stage3Subheader2}}</h3>
-<p>{{caseStudy.stage3Subheader2Text}}</p>
 
-<h3>{{caseStudy.stage3Subheader3}}</h3>
-<p>{{caseStudy.stage3Subheader3Text}}</p>
+<h3>{{__ 'cannalign.stage3.subHeader2'}}</h3>
+<p>{{__ 'cannalign.stage3.subHeader2.text'}}</p>
 
-<a id="case-study-behance-link" href="{{caseStudy.url}}">
+<h3>{{__ 'cannalign.stage3.subHeader3'}}</h3>
+<p>{{__ 'cannalign.stage3.subHeader3.text'}}</p>
+
+<a id="case-study-behance-link" href="#">
 	<img src="img/case-studies/btn_Behance.png" alt="Behance link">
 </a>
 
-<img class="case-study-related" src="{{caseStudy.stage3ClosingImage}}" alt="Stage 3 closing image">
-<p class="captions">{{caseStudy.stage3ClosingImageCaptions}}</p>
+<img class="case-study-related" src="img/case-studies/img_UI.jpg" alt="Stage 3 closing image">
+{{!-- <p class="captions">{{cannalign.stage3.ClosingImageCaptions}}</p> --}}
+
+
 
 {{!-- Client words --}}
 {{>client-remarks}}
 
+
+
 {{!-- Conclusion --}}
 
-<h3>{{caseStudy.conclusion}}</h3>
-<p>{{caseStudy.conclusionText}}</p>
+<h3>{{__ 'cannalign.conclusion.header'}}</h3>
+<p>{{__ 'cannalign.conclusion.para1'}}</p>
+<p>{{__ 'cannalign.conclusion.para2'}}</p>
