@@ -6,6 +6,7 @@ module.exports = function() {
 	var _helpers = {};
 	
 	// standard hbs equality check, pass in two values from template
+	// Usage
 	// {{#ifeq keyToCheck data.myKey}} [requires an else blockin template regardless]
 	_helpers.ifeq = function(a, b, options) {
 		console.log("a :"+a+" b: "+b);
@@ -19,6 +20,7 @@ module.exports = function() {
 	};
 
 	// converts a comma separated string value into a chunk of html <li> list elements
+	// Usage
 	// {{listCSV csv}} 
 	_helpers.listCSV = function (csv){
 		const array = arrayFrom(csv);
@@ -29,7 +31,15 @@ module.exports = function() {
 		return new hbs.SafeString(list);
 	}
 
+	// converts a comma separated string value into an iteratable array list
+	// Usage
+	// {{arrayFrom csv}} 
+	_helpers.arrayFrom = function (csv){
+		return arrayFrom(csv);
+	}
+
 	// converts a milliseconds value into <MON YYYY> format for example Nov 2017
+	// Usage
 	// {{monyyyy date}}
 	_helpers.monyyyy = function(milliseconds){
 		const date = new Date(milliseconds);

@@ -77,11 +77,13 @@ img.micro {
   width: 60%; }
 
 #role {
-  float: right; }
-  #role ul {
+  float: right;
+  line-height: 37px; }
+  #role > div > img {
+    width: 20px;
+    height: auto;
+    padding-right: 30px;
     padding-left: 20px; }
-    #role ul li {
-      list-style-image: url("../img/ic_check.svg"); }
 
 .float-left {
   float: left; }

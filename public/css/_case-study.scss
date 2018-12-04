@@ -111,11 +111,13 @@ img.micro{
 
 #role{
 	float:right;
-	ul{
+	line-height:37px;
+
+	>div>img{
+		width:20px;
+		height:auto;
+		padding-right:30px;
 		padding-left:20px;
-		li{
-			list-style-image: url("../img/ic_check.svg");
-		}
 	}
 }
 
