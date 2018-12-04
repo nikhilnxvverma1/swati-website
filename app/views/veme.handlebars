@@ -1,0 +1,140 @@
+{{!-- Intro and overview --}}
+
+<h1>{{{__ 'veme.openingHeader'}}}-</h1>
+<h2>{{{__ 'veme.openingSubText'}}}</h2>
+<p>{{{__ 'veme.introduction'}}}</p>
+<p>{{{__ 'veme.introLink'}}}</p>
+
+<p class="notice">{{{__ 'veme.underDevelopmentNotice'}}}</p>
+
+{{!-- Challenges and roles --}}
+{{>challenges-roles}}
+
+{{!-- Stage 1 --}}
+
+<h2>{{caseStudy.stage1Header}}</h2>
+<p>{{caseStudy.stage1Text}}</p>
+
+<h3>{{caseStudy.stage1Subheader1}}</h3>
+<p>{{caseStudy.stage1Subheader1Text}}</p>
+
+{{!--Cannalign table lists --}}
+<div class="cannalign-lists-container">
+	<div>
+		<h4 class="uppercase">culture</h4>
+		<p class="captions">How the community would describe us?</p>
+		<ul>
+			<li>accessible</li>
+			<li><span class="highlighted">information rich</span></li>
+			<li>open</li>
+			<li><span class="highlighted">local</span></li>
+		</ul>
+	</div>
+	<div>
+		<h4 class="uppercase">target group</h4>
+		<p class="captions">How would we describe our target audience?</p>
+		<ul>
+			<li>young</li>
+			<li>open minded</li>
+			<li><span class="highlighted">searching</span></li>
+			<li>adaptable</li>
+		</ul>
+	</div>
+	<div>
+		<h4 class="uppercase">voice</h4>
+		<p class="captions">How do we want to sound to others?</p>
+		<ul>
+			<li><span class="highlighted">trustworthy</span></li>
+			<li>serious</li>
+			<li><span class="highlighted">community</span></li>
+			<li><span class="highlighted">abundant</span></li>
+		</ul>
+	</div>
+	<div>
+		<h4 class="uppercase">feeling</h4>
+		<p class="captions">How to others feel about us after being in contact with us?</p>
+		<ul>
+			<li><span class="highlighted">happy</span></li>
+			<li>involved</li>
+			<li><span class="highlighted">supported</span></li>
+		</ul>
+	</div>
+	<div>
+		<h4 class="uppercase">impact</h4>
+		<p class="captions">How we are different from others?</p>
+		<ul>
+			<li>expanding horizons</li>
+			<li><span class="highlighted">extended community</span></li>
+		</ul>
+	</div>
+</div>
+<p class="captions">
+	<span class="bold">Product USP</span>: Local - Community based, Information Rich, Trustworthy, For everyone inclusive.
+</p>
+
+<h3>{{caseStudy.stage1Subheader2}}</h3>
+<p>{{caseStudy.stage1Subheader2Text}}</p>
+
+{{!-- Persona --}}
+{{>persona}}
+
+<div style="clear: both;"></div> <!-- Clear the floats -->
+<p class="captions">
+	{{caseStudy.inletCaptions}}
+</p>
+
+<h3>{{caseStudy.stage1Subheader3}}</h3>
+<p>{{caseStudy.stage1Subheader3Text}}</p>
+
+<img class="case-study-related" src="{{caseStudy.stage1ClosingImage}}" alt="Stage 1 closing image">
+<p class="captions">{{caseStudy.stage1ClosingImageCaption}}</p>
+
+{{!-- Stage 2 --}}
+
+<h2>{{caseStudy.stage2Header}}</h2>
+<p>{{caseStudy.stage2Text}}</p>
+
+<img class="case-study-related" src="{{caseStudy.stage2Image}}" alt="Stage 2 closing image">
+<p class="captions">{{caseStudy.stage2ImageCaptions}}</p>
+
+{{!-- Stage 3 --}}
+<h2>{{caseStudy.stage3Header}}</h2>
+<p>{{caseStudy.stage3Text}}</p>
+
+<h3>{{caseStudy.stage3Subheader1}}</h3>
+<p>{{caseStudy.stage3Subheader1Text}}</p>
+
+{{!-- Moodboards --}}
+<div class="moodboards">
+	<div class="big">
+		<img src="{{caseStudy.stage3MoodboardImage1}}" alt="Moodboard 1">
+	</div>
+	<div class="small">
+		<img src="{{caseStudy.stage3MoodboardImage2}}" alt="Moodboard 2">
+		<img src="{{caseStudy.stage3MoodboardImage3}}" alt="Moodboard 3">
+		<img src="{{caseStudy.stage3MoodboardImage4}}" alt="Moodboard 4">
+		<img src="{{caseStudy.stage3MoodboardImage5}}" alt="Moodboard 5">
+	</div>
+</div>
+<p class="captions">{{caseStudy.stage3MoodboardCaptions}}</p>
+
+<h3>{{caseStudy.stage3Subheader2}}</h3>
+<p>{{caseStudy.stage3Subheader2Text}}</p>
+
+<h3>{{caseStudy.stage3Subheader3}}</h3>
+<p>{{caseStudy.stage3Subheader3Text}}</p>
+
+<a id="case-study-behance-link" href="{{caseStudy.url}}">
+	<img src="img/case-studies/btn_Behance.png" alt="Behance link">
+</a>
+
+<img class="case-study-related" src="{{caseStudy.stage3ClosingImage}}" alt="Stage 3 closing image">
+<p class="captions">{{caseStudy.stage3ClosingImageCaptions}}</p>
+
+{{!-- Client words --}}
+{{>client-remarks}}
+
+{{!-- Conclusion --}}
+
+<h3>{{caseStudy.conclusion}}</h3>
+<p>{{caseStudy.conclusionText}}</p>

@@ -1,3 +1,21 @@
 {
-	"helloWorld":"Hello World"
+	"helloWorld": "Hello World",
+	"veme.openingHeader": "VEME",
+	"veme.openingSubText": "Empowering The Future Of Social Media and Decentralised Media on Blockchain",
+	"veme.introduction": "<span class='bold'>With round  one of investment successfully closed and opened for round 2, VEME is a blockchain enabled XR (Extended Reality) social networking app built to bridge your device and the world in ways never before imagined.</span> Most creators on social media struggle to monetize their content. VEME’s advanced algorithm ensures that centralised social media platforms no longer keep us in filter bubbles of perception and sell our data to the highest bidder.",
+	"veme.introLink": "To know more about this revolution, check their <a href='http://www.veme.com/'>official website</a>",
+	"veme.underDevelopmentNotice": "Please note: Since the product is still under development, I will not be posting any deliverables that are still under development consideration. In this case study, you will be viewing deliverables that have been part of a successful MVP launch on appstore.",
+	"veme.background":"Background",
+	"veme.background.subText":"Reworking a problem statement over and over again was no fun (until blockchain happened!)",
+	"veme.background.exposition.para1":"As mentioned earlier, VEME started back in 2016 with an aim to provide a platform to create and curate video memes. Though the idea was novice, as there was no dedicated social media platforms to do this; it wasn’t really something that could not be achieved in other approachable ways. Over and over again we found ourselves stuck in cycle of relaunching the app and then getting back to the drawing board to make it better than the earlier release.",
+	"veme.background.exposition.para2":"A paradigm shift happened when we realised that this idea can shape the future of social media platforms if developed on blockchain. Together as a team we sat to discuss a long term vision that would unfold itself over the course of time.",
+	"veme.analysis.header":"Business & Competitive Analysis",
+	"veme.analysis.subHeader":"The very first thing we did was we asked ourselves - Why VEME?",
+	"veme.analysis.text1":"To understand how users interacted with video content, me and my team digged deep, conducted surveys and found out some interesting stats:",
+	"veme.analysis.caption1":"Communication is visual",
+	"veme.analysis.caption2":"Internet traffic is video",
+	"veme.analysis.caption3":"Increase in people sharing link for video posts compared to text only posts",
+	"veme.analysis.caption4":"Average increase in views for captioned videos (VEME IT!)",
+	"veme.analysis.text2":"Although there are growing number of apps to browse and curate video content, only a few were long terms success. But each of these apps catered to a different business need. So the first thing we started in order to finalise our business model was a thorough competitive analysis.",
+	"bye": "bye"
 }
