@@ -72,21 +72,63 @@
 
 		{{{body}}}
 
-		{{!-- Previous case studies --}}
+		{{!-- Previous case studies if exists--}}
+		{{#if previous}}
 		<div class="other-case-studies float-left">
 			<h3 class="highlighted-header">
-				view on behance
-				<img class="micro" src="img/ic_open_tab.svg" alt="Opens in new tab">
+				{{#if previous.isCaseStudy}}
+					<a href='/case-study?id={{previous.id}}'>
+						{{__ 'caseStudy.readPreviousCaseStudy'}}
+					</a>
+				{{else}}
+					<a href='{{previous.externalPortfolioUrl}}' target="_blank">
+						{{previous.previewCaption}}
+						<img class="micro" src="img/ic_open_tab.svg" alt="Opens in new tab">
+					</a> 
+				{{/if}}
 			</h3>
-			<p>Appinventive- Branding India's leading mobile app development company (TODO)</p>
-		</div>
+			<p>
+				{{#if previous.isCaseStudy}}
+					<a href='/case-study?id={{previous.id}}'>
+				{{else}}
+					<a href='{{previous.externalPortfolioUrl}}' target="_blank">
+				{{/if}}
 
-		{{!-- Next case study --}}
-		<div class="other-case-studies float-right">
-			<h3 class="highlighted-header">read next case study</h3>
-			<p>VEME- Empowering the future of social media and decentralised media on blockchain (TODO)</p>
+				{{previous.previewOverview}}
+				</a>
+			</p>
 		</div>
-		<div style="clear: both;"></div> <!-- Clear the floats -->
+		{{/if}}
+
+		{{!-- Next case study if exists--}}
+		{{#if next}}
+		<div class="other-case-studies float-right">
+			<h3 class="highlighted-header">
+				{{#if next.isCaseStudy}}
+					<a href='/case-study?id={{next.id}}'>
+						{{__ 'caseStudy.readNextCaseStudy'}}
+					</a>
+				{{else}}
+					<a href='{{next.externalPortfolioUrl}}' target="_blank">
+						{{next.previewCaption}}
+						<img class="micro" src="img/ic_open_tab.svg" alt="Opens in new tab">
+					</a> 
+				{{/if}}
+			</h3>
+			<p>
+				{{#if next.isCaseStudy}}
+					<a href='/case-study?id={{next.id}}'>
+				{{else}}
+					<a href='{{next.externalPortfolioUrl}}' target="_blank">
+				{{/if}}
+
+				{{next.previewOverview}}
+				</a>
+			</p>
+		</div>
+		<!-- Clear the floats -->
+		<div style="clear: both;"></div> 
+		{{/if}}
 
 	</div>
 
