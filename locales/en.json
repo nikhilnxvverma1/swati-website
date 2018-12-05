@@ -85,5 +85,10 @@
 	"cannalign.conclusion.para1": "A flawless collaboration with all stakeholders including client and my own team at Appinventiv ensured that the project gets completed on time and with minimum iterations required, saving valuable time and effort on our end.",
 	"cannalign.conclusion.para2": "A great learning that I received from this project was to make sure to clearly communicate the exact goals and expectations for each team member and stick to a design process that benefits the product as well as everyone involved in it.",
 	"caseStudy.readNextCaseStudy": "Read Next Case Study",
-	"caseStudy.readPreviousCaseStudy": "Read Previous Case Study"
+	"caseStudy.readPreviousCaseStudy": "Read Previous Case Study",
+	"caseStudy.startDate": "start Date",
+	"caseStudy.status": "status",
+	"caseStudy.projectSummary": "project summary",
+	"caseStudy.deliverables": "deliverables",
+	"caseStudy.client": "client"
 }

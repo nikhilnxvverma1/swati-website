@@ -132,15 +132,29 @@ img.micro{
 .other-case-studies{
 	width:30%;
 	h3{
+		color:$secondary-color;
 		margin-bottom:3px;
 	}
 	p{
 		margin-top:3px;
 		font-weight: bold;
 		font-size:1.25em;
+		text-decoration-color: black;
 		a{
 			color:black;
 		}
+	}
+
+	a{
+		text-decoration: none;
+		text-decoration-color: black;
+		p{
+			color:black;
+		}
+	}
+	a:hover{
+		text-decoration: underline;
+		text-decoration-color: black;
 	}
 }
 

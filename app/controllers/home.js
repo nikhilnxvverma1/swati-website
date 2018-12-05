@@ -31,7 +31,7 @@ router.get('/case-study', (req, res, next) => {
 
 	db.CaseStudy.findAll(
 		{
-			order:["startDate"]
+			order:["id"]
 		}
 	).then((caseStudies) => {
 

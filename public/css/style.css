@@ -94,13 +94,23 @@ img.micro {
 .other-case-studies {
   width: 30%; }
   .other-case-studies h3 {
+    color: #E85F64;
     margin-bottom: 3px; }
   .other-case-studies p {
     margin-top: 3px;
     font-weight: bold;
-    font-size: 1.25em; }
+    font-size: 1.25em;
+    text-decoration-color: black; }
     .other-case-studies p a {
       color: black; }
+  .other-case-studies a {
+    text-decoration: none;
+    text-decoration-color: black; }
+    .other-case-studies a p {
+      color: black; }
+  .other-case-studies a:hover {
+    text-decoration: underline;
+    text-decoration-color: black; }
 
 img.case-study-related {
   width: 100%; }
