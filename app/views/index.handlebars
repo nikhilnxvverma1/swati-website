@@ -1,4 +1,5 @@
-
+<div class="full-height">
+	{{>header}}
 	<div id="intro" class="center-aligned">
 
 		<h1 id="intro-brief">
@@ -31,30 +32,21 @@
 	<h4 id="work-intro-header" class="uppercase center-aligned">
 		Here is some of my latest work
 	</h4>
+</div>
 
-	<div id="case-studies">
-		<div class="case-study-item item-left">
-			<img src="/img/thumb_Cannalign.png" alt="Cannalign">
-			<h4 class="spaced-out passive-color light">Case Study</h4>
-			<h2>Cannalign</h2>
-			<h3>Building a Product Database for Medical Marijuana. Bringing Retailers, Vendors and Consumers on One Single Platform.</h3>
-		</div>
-		<div class="case-study-item item-right">
-			<img src="/img/thumb_VEME.png" alt="VEME">
-			<h4 class="spaced-out passive-color light">Case Study <span class="tag">Ongoing</span></h4>
-			<h2 class="uppercase">veme</h2>
-			<h3>Empowering the Future of Social Video + Decentralised Media on Blockchain.</h3>
-		</div>
-		<div class="case-study-item item-left">
-			<img src="/img/thumb_Appinventiv.png" alt="Appinventive">
-			<h4 class="spaced-out passive-color light">View on Behance</h4>
-			<h2>Appinventive</h2>
-			<h3>Branding India’s Leading Mobile App Development Company</h3>
-		</div>
-		<div class="case-study-item item-right">
-			<img src="/img/thumb_ET.png" alt="Economic Times">
-			<h4 class="spaced-out passive-color light">View on Behance</h4>
-			<h2>Economic Times</h2>
-			<h3>Building a Digital Platform for Recognising Start-up Excellence Across The Country</h3>
-		</div>
+<div id="case-studies">
+	{{#each caseStudies}}
+	<div {{#if (isEven @index)}}class="case-study-item item-left"{{else}}class="case-study-item item-right"{{/if}}>
+		{{#if this.isCaseStudy}}
+		<a href='/case-study?id={{this.id}}'>
+		{{else}}
+		<a href='{{this.externalPortfolioUrl}}' target="_blank">
+		{{/if}}
+			<img src="{{this.previewImage}}" alt="Case study preview image">
+			<h4 class="spaced-out passive-color light">{{this.previewCaption}}</h4>
+			<h2>{{this.name}}</h2>
+			<h3>{{this.previewOverview}}</h3>
+		</a>
 	</div>
+	{{/each}}
+</div>

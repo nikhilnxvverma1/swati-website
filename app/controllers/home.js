@@ -9,13 +9,13 @@ module.exports = (app) => {
 router.get('/', (req, res, next) => {
 	db.CaseStudy.findAll(
 		{
-			order:["startDate"]
+			order:["id"]
 		}
 	).then((caseStudies) => {
 		res.render('index', {
 			caseStudies:caseStudies,
 			activeLink:getActiveLinkOn('work'),
-			layout:"header-body-footer"
+			layout:"body-footer"
 		});
 	});
 });

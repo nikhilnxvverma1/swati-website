@@ -38,6 +38,13 @@ module.exports = function() {
 		return arrayFrom(csv);
 	}
 
+	// returns true if a number is even, false otherwise
+	// Usage
+	// {{isEven n}} 
+	_helpers.isEven = function(n){
+		return n%2==0
+	}
+
 	// converts a milliseconds value into <MON YYYY> format for example Nov 2017
 	// Usage
 	// {{monyyyy date}}
