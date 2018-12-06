@@ -215,6 +215,30 @@ p.captions {
     background-color: #F9DB6C;
     padding: 5px; }
 
+#veme-design-illustration {
+  width: 100%; }
+  #veme-design-illustration img {
+    width: 23%;
+    height: auto;
+    margin-left: 5px; }
+
+#veme-stats {
+  width: 100%;
+  height: auto; }
+
+#veme-comp-analysis-table {
+  width: 70%;
+  height: auto; }
+
+#veme-task-matrix {
+  width: 100%;
+  height: auto; }
+
+#veme-final-output {
+  width: 80%;
+  height: auto;
+  padding-left: 40px; }
+
 body {
   padding-left: 0px;
   padding-right: 0px;
