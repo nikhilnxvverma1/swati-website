@@ -1,4 +1,5 @@
-{{$activeLink := "work"}}
+{{$activeLink := .Params.activelink}}
+{{/*printf "active link is : %#v" $activeLink*/}}
 <header class="outer-margin-offset">
 	<nav>
 
@@ -9,7 +10,7 @@
 		<ul id="sidebar">
 			
 			<li class="{{if eq $activeLink "work"}}active{{end}}"><a href="/">work</a></li>
-			<li class="{{if eq $activeLink "about"}}active{{end}}"><a href="/about">about</a></li>
+			<li class="{{if eq $activeLink "about"}}active{{end}}"><a href="/about/">about</a></li>
 			<li><a class="" href="https://www.linkedin.com/in/swatisoni1">resume</a></li>
 			<li>
 				<a id="contact" class="mini-left-gap" href="mailto:hello@swatisoni.com?Subject=Hello%20Swati" target="_top">
@@ -29,7 +30,7 @@
 		</div>
 		<ul id="horizontal-nav-links">
 			<li><a class="nav-link {{if eq $activeLink "work"}}active{{end}}" href="/">work</a></li>
-			<li><a class="nav-link {{if eq $activeLink "about"}}active{{end}}" href="/about">about</a></li>
+			<li><a class="nav-link {{if eq $activeLink "about"}}active{{end}}" href="/about/">about</a></li>
 			<li><a class="nav-link" href="https://www.linkedin.com/in/swatisoni1">linked in</a></li>
 			<li>
 				<a id="contact-email" class="mini-left-gap" href="mailto:hello@swatisoni.com?Subject=Hello%20Swati" target="_top">

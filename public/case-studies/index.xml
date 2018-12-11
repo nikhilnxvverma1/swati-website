@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Case-studies on My New Hugo Site</title>
+    <link>http://example.org/case-studies/</link>
+    <description>Recent content in Case-studies on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Dec 2018 19:33:46 +0530</lastBuildDate>
+    
+	<atom:link href="http://example.org/case-studies/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Veme</title>
+      <link>http://example.org/case-studies/veme/</link>
+      <pubDate>Mon, 10 Dec 2018 19:33:46 +0530</pubDate>
+      
+      <guid>http://example.org/case-studies/veme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cannalign</title>
+      <link>http://example.org/case-studies/cannalign/</link>
+      <pubDate>Mon, 10 Dec 2018 19:33:31 +0530</pubDate>
+      
+      <guid>http://example.org/case-studies/cannalign/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Economic Times</title>
+      <link>http://example.org/case-studies/economic-times/</link>
+      <pubDate>Mon, 10 Dec 2018 12:38:56 +0530</pubDate>
+      
+      <guid>http://example.org/case-studies/economic-times/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Appinventive</title>
+      <link>http://example.org/case-studies/appinventive/</link>
+      <pubDate>Mon, 10 Dec 2018 12:38:25 +0530</pubDate>
+      
+      <guid>http://example.org/case-studies/appinventive/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

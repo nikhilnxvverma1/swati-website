@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/about/</loc>
+    <lastmod>2018-12-11T19:19:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/case-studies/veme/</loc>
+    <lastmod>2018-12-10T19:33:46+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/case-studies/cannalign/</loc>
+    <lastmod>2018-12-10T19:33:31+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/case-studies/economic-times/</loc>
+    <lastmod>2018-12-10T12:38:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/case-studies/appinventive/</loc>
+    <lastmod>2018-12-10T12:38:25+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2018-12-10T12:29:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/case-studies/</loc>
+    <lastmod>2018-12-10T19:33:46+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
