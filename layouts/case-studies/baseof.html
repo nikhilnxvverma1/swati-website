@@ -3,125 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>{{title }}</title>
+  <title>{{.Title}}</title>
   <link rel="stylesheet" href="/css/style.css">
-  {{!-- Custom event handling --}}
+  <!-- Custom event handling -->
   <script src="/js/ui-handling.js"></script>
-  {{#if ENV_DEVELOPMENT}}
-    <script src="http://localhost:35729/livereload.js"></script>
-  {{/if}}
 </head>
 <body>
-
-	{{>header}}
+	{{block "header" .}} {{partial "header.html" .}} {{end}}
 	
-	<img src="{{caseStudy.heroImage}}"
+	<img src="{{.Params.heroImage}}"
  		alt="Case Study Banner" 
  		class="case-study-banner"/>
 
 	<div class="case-study-body">
 
-		{{!-- Case Study Summary --}}
+		<!-- Case Study Summary -->
 
 		<div class="project-outline minor">
 			<div class="outline-detail">
-				<span class="detail-header minor">{{__ 'caseStudy.startDate'}}</span>
-				<span class="detail-value">{{monyyyy caseStudy.startDate}}</span>
+				<span class="detail-header minor">{{i18n "caseStudy.startDate"}}</span>
+				<span class="detail-value">{{.Params.caseStudy.startDate}}</span>
 			</div>
 			<div class="outline-detail">
-				<span class="detail-header minor">{{__ 'caseStudy.status'}}</span>
-				<span class="detail-value capitalize">{{caseStudy.status}}</span>
+				<span class="detail-header minor">{{i18n "caseStudy.status"}}</span>
+				<span class="detail-value capitalize">{{.Params.caseStudy.status}}</span>
 			</div>
 			<div class="outline-detail">
-				<div id="view-site" class="detail-value capitalize"><a href={{caseStudy.projectUrl}}>{{__ 'caseStudy.status'}}</a></div>
+				<div id="view-site" class="detail-value capitalize"><a href={{.Params.caseStudy.projectUrl}}>{{i18n "caseStudy.status"}}</a></div>
 			</div>
 			<div class="outline-detail">
-				<span class="detail-header minor">{{caseStudy.share}}</span>
+				<span class="detail-header minor">{{.Params.caseStudy.share}}</span>
 				<span class="detail-value capitalize">
-					<a href="{{caseStudy.facebookShare}}">
-						<img src="img/ic_facebook_share.svg" alt="Facebook" class="micro">
+					<a href="{{.Params.caseStudy.facebookShare}}">
+						<img src="/img/ic_facebook_share.svg" alt="Facebook" class="micro">
 					</a>
-					<a href="{{caseStudy.twitterShare}}">
-						<img src="img/ic_twitter.svg" alt="Twitter" class="micro">
+					<a href="{{.Params.caseStudy.twitterShare}}">
+						<img src="/img/ic_twitter.svg" alt="Twitter" class="micro">
 					</a>
-					<a href="{{caseStudy.linkedInShare}}">
-						<img src="img/ic_linkedin.svg" alt="Linked In" class="micro">
+					<a href="{{.Params.caseStudy.linkedInShare}}">
+						<img src="/img/ic_linkedin.svg" alt="Linked In" class="micro">
 					</a>
 				</span>
 			</div>
 		</div>
 		<div class="project-outline major">
 			<div class="outline-detail major">
-				<div class="detail-header major">{{__ 'caseStudy.projectSummary'}}</div>
-				<div class="detail-value major">{{caseStudy.projectSummary}}</div>
+				<div class="detail-header major">{{i18n "caseStudy.projectSummary"}}</div>
+				<div class="detail-value major">{{.Params.caseStudy.projectSummary}}</div>
 			</div>
 			<div class="outline-detail major">
-				<div class="detail-header major">{{__ 'caseStudy.deliverables'}}</div>
-				<div class="detail-value major">{{caseStudy.deliverables}}</div>
+				<div class="detail-header major">{{i18n "caseStudy.deliverables"}}</div>
+				<div class="detail-value major">{{.Params.caseStudy.deliverables}}</div>
 			</div>
 			<div class="outline-detail major">
-				<div class="detail-header major">{{__ 'caseStudy.client'}}</div>
+				<div class="detail-header major">{{i18n "caseStudy.client"}}</div>
 				<div class="detail-value major">
-					{{caseStudy.clientName}}
-					<a href="{{caseStudy.clientLinkedIn}}">
-						<img src="img/ic_linkedin_profile.svg" alt="Linked In" class="micro">
+					{{.Params.caseStudy.clientName}}
+					<a href="{{.Params.caseStudy.clientLinkedIn}}">
+						<img src="/img/ic_linkedin_profile.svg" alt="Linked In" class="micro">
 					</a>
 				</div>
 			</div>
 		</div>
 
-		{{{body}}}
+		{{.Content}}
 
-		{{!-- Previous case studies if exists--}}
-		{{#if previous}}
+		<!-- Previous case studies if exists -->
+		{{if .Params.previous}}
 		<div class="other-case-studies float-left">
-		{{#if previous.isCaseStudy}}
-			<a href='/case-study?id={{previous.id}}'>
+		{{if .Params.previous.isCaseStudy}}
+			<a href='/case-study/{{.Params.previous.id}}/'>
 		{{else}}
-			<a href='{{previous.externalPortfolioUrl}}' target="_blank">
-		{{/if}}
+			<a href='{{.Params.previous.externalPortfolioUrl}}' target="_blank">
+		{{end}}
 				<h3 class="highlighted-header">
-					{{#if previous.isCaseStudy}}
-						{{__ 'caseStudy.readPreviousCaseStudy'}}
+					{{if .Params.previous.isCaseStudy}}
+						{{i18n "caseStudy.readPreviousCaseStudy"}}
 					{{else}}
-						{{previous.previewCaption}}
+						{{.Params.previous.previewCaption}}
 						<img class="micro" src="img/ic_open_tab.svg" alt="Opens in new tab">
-					{{/if}}
+					{{end}}
 				</h3>
 				<p>
-					{{previous.name}}- {{previous.previewOverview}}
+					{{.Params.previous.name}}- {{.Params.previous.previewOverview}}
 				</p>
 			</a>
 		</div>
-		{{/if}}
+		{{end}}
 
-		{{!-- Next case study if exists--}}
-		{{#if next}}
+		<!-- Next case study if exists -->
+		{{if .Params.next}}
 		<div class="other-case-studies float-right">
-		{{#if next.isCaseStudy}}
-			<a href='/case-study?id={{next.id}}'>
+		{{if .Params.next.isCaseStudy}}
+			<a href='/case-studies/{{.Params.next.id}}'>
 		{{else}}
-			<a href='{{next.externalPortfolioUrl}}' target="_blank">
-		{{/if}}
+			<a href='{{.Params.next.externalPortfolioUrl}}' target="_blank">
+		{{end}}
 				<h3 class="highlighted-header">
-					{{#if next.isCaseStudy}}
-						{{__ 'caseStudy.readPreviousCaseStudy'}}
+					{{if .Params.next.isCaseStudy}}
+						{{i18n "caseStudy.readPreviousCaseStudy"}}
 					{{else}}
-						{{next.previewCaption}}
+						{{.Params.next.previewCaption}}
 						<img class="micro" src="img/ic_open_tab.svg" alt="Opens in new tab">
-					{{/if}}
+					{{end}}
 				</h3>
 				<p>
-					{{next.name}}- {{next.previewOverview}}
+					{{.Params.next.name}}- {{.Params.next.previewOverview}}
 				</p>
 			</a>
 		</div>
 		<!-- Clear the floats -->
 		<div style="clear: both;"></div> 
-		{{/if}}
+		{{end}}
 
 	</div>
 
-	{{>footer}}
+	{{block "footer" .}} {{partial "footer.html" .}} {{end}}
   </body>
 </html>
