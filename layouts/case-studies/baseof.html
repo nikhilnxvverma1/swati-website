@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>{{.Title}}</title>
-  <link rel="stylesheet" href="/css/style.css">
+  {{ $options := (dict "includePaths" (slice "assets/css")) }}
+  {{ $style := resources.Get "css/style.scss" | resources.ToCSS $options| resources.Minify}}
+  <link rel="stylesheet" href="{{$style.Permalink}}">
   <!-- Custom event handling -->
   <script src="/js/ui-handling.js"></script>
 </head>

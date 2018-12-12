@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>{{.Title }}</title>
-  <link rel="stylesheet" href="/css/style.css">  
+  {{ $style := resources.Get "css/style.scss" | resources.ToCSS | resources.Minify}}
+  <link rel="stylesheet" href="{{$style.Permalink}}">
   <script src="/js/ui-handling.js"></script>
   
 </head>
