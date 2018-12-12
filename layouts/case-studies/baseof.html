@@ -32,7 +32,7 @@
 				<div id="view-site" class="detail-value capitalize"><a href={{.Params.caseStudy.projectUrl}}>{{i18n "caseStudy.status" | safeHTML}}</a></div>
 			</div>
 			<div class="outline-detail">
-				<span class="detail-header minor">{{.Params.caseStudy.share}}</span>
+				<span class="detail-header minor">{{i18n "caseStudy.share" | safeHTML}}</span>
 				<span class="detail-value capitalize">
 					<a href="{{.Params.caseStudy.facebookShare}}">
 						<img src="/img/ic_facebook_share.svg" alt="Facebook" class="micro">
@@ -66,7 +66,11 @@
 			</div>
 		</div>
 
-		{{block "main" .}} {{end}}
+		{{if eq .Params.id "veme"}}
+			{{block "veme" .}} {{partial "veme.html" .}} {{end}}
+		{{else}}
+			{{block "main" .}} {{end}}
+		{{end}}
 
 		<!-- Previous case studies if exists -->
 		{{if .Params.previous}}

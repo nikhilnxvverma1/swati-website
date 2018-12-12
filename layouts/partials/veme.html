@@ -1,0 +1,78 @@
+<!-- Intro and overview -->
+
+<h1>{{i18n "veme.openingHeader" | safeHTML}}-</h1>
+<h2>{{i18n "veme.openingSubText" | safeHTML}}</h2>
+<p>{{i18n "veme.introduction" | safeHTML}}</p>
+<p>{{i18n "veme.introLink" | safeHTML}}</p>
+<p class="notice">{{i18n "veme.underDevelopmentNotice" | safeHTML}}</p>
+
+
+
+<!-- Challenges and roles -->
+
+{{block "challenges-roles" .}} {{partial "challenges-roles.html" .}} {{end}}
+
+
+<!-- Background -->
+
+<h2>{{i18n "veme.background.header" | safeHTML}}</h2>
+<h3>{{i18n "veme.background.subHeader" | safeHTML}}</h3>
+<p>{{i18n "veme.background.exposition.para1" | safeHTML}}</p>
+<p>{{i18n "veme.background.exposition.para2" | safeHTML}}</p>
+
+
+
+<!-- Business and Competetive Analysis -->
+
+<h2>{{i18n "veme.analysis.header" | safeHTML}}</h2>
+<h3>{{i18n "veme.analysis.subHeader" | safeHTML}}</h3>
+<p>{{i18n "veme.analysis.text1" | safeHTML}}</p>
+<!-- Veme stats image -->
+<img id="veme-stats" src="/img/case-studies/veme_stats.jpg" alt="Vene stats">
+<p>{{i18n "veme.analysis.text2" | safeHTML}}</p>
+<!-- Comp analysis image -->
+<img id="veme-comp-analysis-table" src="/img/case-studies/veme_comp-analysis.jpg" alt="Competetive Analysis">
+<p>{{i18n "veme.analysis.text3" | safeHTML}}</p>
+<!-- Veme task matrix image -->
+<img id="veme-task-matrix" src="/img/case-studies/veme_task-matrix.jpg" alt="Task matrix">
+<p>{{i18n "veme.analysis.conclusion.header" | safeHTML}}</p>
+<ul>
+	<li>{{i18n "veme.analysis.conclusion.bullet1" | safeHTML}}</li>
+	<li>{{i18n "veme.analysis.conclusion.bullet2" | safeHTML}}</li>
+	<li>{{i18n "veme.analysis.conclusion.bullet3" | safeHTML}}</li>
+</ul>
+
+
+<!-- Prototype to Design -->
+
+<h2>{{i18n "veme.design.header" | safeHTML}}</h2>
+<p>{{i18n "veme.design.text" | safeHTML}}</p>
+<!-- 4 images row wise -->
+<div id="veme-design-illustration">
+	<img src="/img/case-studies/veme_paper-prototype.jpg" alt="paper prototype">
+	<img src="/img/case-studies/veme_mockup.jpg" alt="mockup">
+	<img src="/img/case-studies/veme_invision.jpg" alt="invision">
+	<img src="/img/case-studies/veme_design.jpg" alt="design">
+</div>
+<p class="captions">{{i18n "veme.design.stages.captions" | safeHTML}}</p>
+
+
+
+<!-- Final Output -->
+
+<h2>{{i18n "veme.output.header" | safeHTML}}</h2>
+<p>{{i18n "veme.output.text" | safeHTML}}</p>
+<img id="veme-final-output" src="/img/case-studies/veme_video.jpg" alt="Final output">
+
+
+
+<!-- Client words -->
+
+{{block "client-remarks" .}} {{partial "client-remarks.html" .}} {{end}}
+
+
+<!-- Conclusion -->
+
+<h2>{{i18n "veme.conclusion.header" | safeHTML}}</h2>
+<p>{{i18n "veme.conclusion.para1" | safeHTML}}</p>
+<p>{{i18n "veme.conclusion.para2" | safeHTML}}</p>
