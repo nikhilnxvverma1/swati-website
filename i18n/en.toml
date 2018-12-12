@@ -1,0 +1,186 @@
+["helloWorld"]
+ other = "Hello World"
+["veme.openingHeader"]
+ other = "VEME"
+["veme.openingSubText"]
+ other = "Empowering The Future Of Social Media and Decentralised Media on Blockchain"
+["veme.introduction"]
+ other = "<span class='bold'>With round  one of investment successfully closed and opened for round 2, VEME is a blockchain enabled XR (Extended Reality) social networking app built to bridge your device and the world in ways never before imagined.</span> Most creators on social media struggle to monetize their content. VEME’s advanced algorithm ensures that centralised social media platforms no longer keep us in filter bubbles of perception and sell our data to the highest bidder."
+["veme.introLink"]
+ other = "To know more about this revolution, check their <a href='http://www.veme.com/'>official website</a>"
+["veme.underDevelopmentNotice"]
+ other = "Please note: Since the product is still under development, I will not be posting any deliverables that are still under development consideration. In this case study, you will be viewing deliverables that have been part of a successful MVP launch on appstore."
+["veme.background.header"]
+ other = "Background"
+["veme.background.subHeader"]
+ other = "Reworking a problem statement over and over again was no fun (until blockchain happened!)"
+["veme.background.exposition.para1"]
+ other = "As mentioned earlier, VEME started back in 2016 with an aim to provide a platform to create and curate video memes. Though the idea was novice, as there was no dedicated social media platforms to do this; it wasn’t really something that could not be achieved in other approachable ways. Over and over again we found ourselves stuck in cycle of relaunching the app and then getting back to the drawing board to make it better than the earlier release."
+["veme.background.exposition.para2"]
+ other = "A paradigm shift happened when we realised that this idea can shape the future of social media platforms if developed on blockchain. Together as a team we sat to discuss a long term vision that would unfold itself over the course of time."
+["veme.analysis.header"]
+ other = "Business & Competitive Analysis"
+["veme.analysis.subHeader"]
+ other = "The very first thing we did was we asked ourselves - Why VEME?"
+["veme.analysis.text1"]
+ other = "To understand how users interacted with video content, me and my team digged deep, conducted surveys and found out some interesting stats:"
+["veme.analysis.caption1"]
+ other = "Communication is visual"
+["veme.analysis.caption2"]
+ other = "Internet traffic is video"
+["veme.analysis.caption3"]
+ other = "Increase in people sharing link for video posts compared to text only posts"
+["veme.analysis.caption4"]
+ other = "Average increase in views for captioned videos (VEME IT!)"
+["veme.analysis.text2"]
+ other = "Although there are growing number of apps to browse and curate video content, only a few were long terms success. But each of these apps catered to a different business need. So the first thing we started in order to finalise our business model was a thorough competitive analysis."
+["veme.analysis.text3"]
+ other = "The next step was building a task matrix within VEME of all the functionalities the product was going to provide. This helped us in understanding how scalable each module needs to be."
+["veme.analysis.conclusion.header"]
+ other = "From this exercise, I was able to conclude:"
+["veme.analysis.conclusion.bullet1"]
+ other = "<span class='bold'>How users are going to use the app:</span> An average is user’s experience can range anywhere from being a curator (liking, commenting and sharing the content) to a creator (creating vemes) and then finally a social media influencer."
+["veme.analysis.conclusion.bullet2"]
+ other = "<span class='bold'>Feature sets for the app: </span>Since there was no dedicated media app for creating captioned videos, I realised creation becomes the backbone of our product. All our feature set needs to be planned around it especially for MVP phase."
+["veme.analysis.conclusion.bullet3"]
+ other = "<span class='bold'>A small dose of gamification</span> can go a long way in motivating users to become creators from curators, increasing user generated content on the platform. "
+["veme.design.header"]
+ other = "From Prototyping to Design"
+["veme.design.text"]
+ other = "Before starting on prototype, I worked on few concept sketches. I shared them with fellow designers and developers in our team for design critiques and feedback. Based on the feedback, I worked on the final set of wireframes and ran it through our clients for a comprehensive feedback."
+["veme.output.header"]
+ other = "The Final Output"
+["veme.output.text"]
+ other = "This is how app works in real world post a successful MVP launch."
+["veme.conclusion.header"]
+ other = "Takeaways"
+["veme.conclusion.para1"]
+ other = "I have been very fond of VEME. During the course of this project, I have been introduced to number of new concepts, strategies that continued to excite me. For instance, the right gamification elements can take you a long way. I was relatively new to gamification but with an expert on team, it helped me to understand how game mechanics can be emoployed in a non game like environment like this to boost user’s participation"
+["veme.conclusion.para2"]
+ other = "Also collaboration was a key to ensure things run smoothly. I have been part of few agile teams in the past but I never really got to appreciate the value of working in sprints until I was working with this international team"
+["bye"]
+ other = "bye"
+["cannalign.openingHeader"]
+ other = "Cannalign"
+["cannalign.openingSubText"]
+ other = "Building a Product Database For Medical Marijuana, Bringing Retailers, Vendors and Consumers On One Single Platform"
+["cannalign.introduction"]
+ other = "For individual use, cannabis can help with health, mental problems and used to ease ailments in patients suffering from issues like cancer, anxiety, depression, stomach problems, insomnia, AIDS and even those struggling with drug abuse. However when it comes to scouting for cannabis products, there isn’t much help around. The goal was to provide consumers with abundance of information at their fingertips to help them understand and create their own opinions about what products are best suited for their overall health."
+["cannalign.stage1.header"]
+ other = "Stage 1: Brand & Strategy Kickoff"
+["cannalign.stage1.text"]
+ other = "With no prior foundation laid, my first task at hand was to establish a user experience strategy. This meant doing an in-depth analysis of all types of users that would be approaching this app to meet a specific requirement, outlining their problems and expectations and providing a definite solution for the same. This is how I proceeded."
+["cannalign.stage1.subHeader1"]
+ other = "Developing A Mission Statement"
+["cannalign.stage1.subHeader1.text"]
+ other = "Every business works on a core value or a mission objective. By brainstorming & prioritizing various attributes, my team and I created the basis to put together a mission statement. Here is a list of attributes that helped us achieve the result."
+["cannalign.table.culture.header"]
+ other = "culture"
+["cannalign.table.culture.subHeader"]
+ other = "How the community would describe us?"
+["cannalign.table.culture.accessible"]
+ other = "accessible"
+["cannalign.table.culture.informationRich"]
+ other = "information rich"
+["cannalign.table.culture.open"]
+ other = "open"
+["cannalign.table.culture.local"]
+ other = "local"
+["cannalign.table.targetGroup.header"]
+ other = "target group"
+["cannalign.table.targetGroup.subHeader"]
+ other = "How would we describe our target audience?"
+["cannalign.table.targetGroup.young"]
+ other = "young"
+["cannalign.table.targetGroup.openMinded"]
+ other = "open minded"
+["cannalign.table.targetGroup.searching"]
+ other = "searching"
+["cannalign.table.targetGroup.adaptable"]
+ other = "adaptable"
+["cannalign.table.voice.header"]
+ other = "voice"
+["cannalign.table.voice.subHeader"]
+ other = "How do we want to sound to others?"
+["cannalign.table.voice.trustworthy"]
+ other = "trustworthy"
+["cannalign.table.voice.serious"]
+ other = "serious"
+["cannalign.table.voice.community"]
+ other = "community"
+["cannalign.table.voice.abundant"]
+ other = "abundant"
+["cannalign.table.feeling.header"]
+ other = "feeling"
+["cannalign.table.feeling.subHeader"]
+ other = "How to others feel about us after being in contact with us?"
+["cannalign.table.feeling.happy"]
+ other = "happy"
+["cannalign.table.feeling.involved"]
+ other = "involved"
+["cannalign.table.feeling.supported"]
+ other = "supported"
+["cannalign.table.impact.header"]
+ other = "impact"
+["cannalign.table.impact.subHeader"]
+ other = "How we are different from others?"
+["cannalign.table.impact.expandingHorizons"]
+ other = "expanding horizons"
+["cannalign.table.impact.extendedCommunity"]
+ other = "extended community"
+["cannalign.table.captions"]
+ other = "<span class=\"bold\">Product USP</span>: Local - Community based, Information Rich, Trustworthy, For everyone inclusive."
+["cannalign.stage1.subheader2"]
+ other = "Building User Personas"
+["cannalign.stage1.subheader2.text"]
+ other = "I started with building user personas for all three types of users this app had- Consumer, Vendor and Dispensaries. Using the quantitative and qualitative data from interviews and surveys, I defined the target group profiles (or user personas) for each user type. "
+["cannalign.stage1.subheader3"]
+ other = "Creating an Information Architecture Map"
+["cannalign.stage1.subheader3.text"]
+ other = "Based on the insights gained from initial round of content audits, competitor analysis and client’s own personal feedbacks, I defined the information architecture map for Cannalign. "
+["cannalign.stage1.closingImageCaptions"]
+ other = "A sample piece of information architecture map for consumer app"
+["cannalign.stage2.header"]
+ other = "Stage 2: Wireframing & Prototyping"
+["cannalign.stage2.text"]
+ other = "Though I did not design high-fidelity mockups and invision prototypes myself for Cannalign, I played an active role in UX discussion around interaction patterns, providing first round of feedbacks to analyst and design teams. My role was to provide guidance through low fidelity paper prototypes so that quick rounds of usability testing could be done before wasting time on digital implementation"
+["cannalign.stage2.imageCaptions"]
+ other = "Paper prototypes like these were ideal and handy when it came to carry UX discussions on interaction design with team. They acted as a tool to validate our choices, provide clarity and reduce the number of iterations in subsequent phases that followed suite."
+["cannalign.stage3.header"]
+ other = "Stage 3: Developing a Visual Coherent Language For Cannalign"
+["cannalign.stage3.subheader1"]
+ other = "Building Moodboards"
+["cannalign.stage3.subheader1.text"]
+ other = "Moodboards or a collection of assets and materials intended to communicate the style, voice, direction, and language for the product, was my first step towards building a uniform design language. This provided a good foundation allowing me to quickly jump to the next stage of visual designing."
+["cannalign.stage3.moodboardCaptions"]
+ other = "The moodboard helped to set client’s preference about the generalistic stylistic concept of the screen. By creating an effective moodboard, I was able to convey the right mood and emotions expected from the product."
+["cannalign.stage3.subHeader2"]
+ other = "Creating a Styleguide"
+["cannalign.stage3.subHeader2.text"]
+ other = "Next came styleguide which was developed by iterating from moodboard and styletiles creating the first version of styleguide."
+["cannalign.stage3.subHeader3"]
+ other = "UI Design for Mobile App & Website"
+["cannalign.stage3.subHeader3.text"]
+ other = "Everything was finally sewn together to form the basis of UI design for both app and website. Here you can see most of the screens hand crafted for this project. To view complete presentation on UI design, please check my Behance page."
+["cannalign.conclusion.header"]
+ other = "Takeaways:"
+["cannalign.conclusion.para1"]
+ other = "A flawless collaboration with all stakeholders including client and my own team at Appinventiv ensured that the project gets completed on time and with minimum iterations required, saving valuable time and effort on our end."
+["cannalign.conclusion.para2"]
+ other = "A great learning that I received from this project was to make sure to clearly communicate the exact goals and expectations for each team member and stick to a design process that benefits the product as well as everyone involved in it."
+["caseStudy.readNextCaseStudy"]
+ other = "Read Next Case Study"
+["caseStudy.readPreviousCaseStudy"]
+ other = "Read Previous Case Study"
+["caseStudy.startDate"]
+ other = "start Date"
+["caseStudy.status"]
+ other = "status"
+["caseStudy.projectSummary"]
+ other = "project summary"
+["caseStudy.deliverables"]
+ other = "deliverables"
+["caseStudy.client"]
+ other = "client"
+["veme.design.stages.captions"]
+ other = "Stages of design. Before final UI design were drafted we covered everything on planning stage itself to reduce iterations. Everything from paper prototypes to low fidelty mockups in balsamiq & prototyping in invision."

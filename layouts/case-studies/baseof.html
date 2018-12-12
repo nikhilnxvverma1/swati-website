@@ -21,15 +21,15 @@
 
 		<div class="project-outline minor">
 			<div class="outline-detail">
-				<span class="detail-header minor">{{i18n "caseStudy.startDate"}}</span>
+				<span class="detail-header minor">{{i18n "caseStudy.startDate" | safeHTML}}</span>
 				<span class="detail-value">{{.Params.caseStudy.startDate}}</span>
 			</div>
 			<div class="outline-detail">
-				<span class="detail-header minor">{{i18n "caseStudy.status"}}</span>
+				<span class="detail-header minor">{{i18n "caseStudy.status" | safeHTML}}</span>
 				<span class="detail-value capitalize">{{.Params.caseStudy.status}}</span>
 			</div>
 			<div class="outline-detail">
-				<div id="view-site" class="detail-value capitalize"><a href={{.Params.caseStudy.projectUrl}}>{{i18n "caseStudy.status"}}</a></div>
+				<div id="view-site" class="detail-value capitalize"><a href={{.Params.caseStudy.projectUrl}}>{{i18n "caseStudy.status" | safeHTML}}</a></div>
 			</div>
 			<div class="outline-detail">
 				<span class="detail-header minor">{{.Params.caseStudy.share}}</span>
@@ -48,15 +48,15 @@
 		</div>
 		<div class="project-outline major">
 			<div class="outline-detail major">
-				<div class="detail-header major">{{i18n "caseStudy.projectSummary"}}</div>
+				<div class="detail-header major">{{i18n "caseStudy.projectSummary" | safeHTML}}</div>
 				<div class="detail-value major">{{.Params.caseStudy.projectSummary}}</div>
 			</div>
 			<div class="outline-detail major">
-				<div class="detail-header major">{{i18n "caseStudy.deliverables"}}</div>
+				<div class="detail-header major">{{i18n "caseStudy.deliverables" | safeHTML}}</div>
 				<div class="detail-value major">{{.Params.caseStudy.deliverables}}</div>
 			</div>
 			<div class="outline-detail major">
-				<div class="detail-header major">{{i18n "caseStudy.client"}}</div>
+				<div class="detail-header major">{{i18n "caseStudy.client" | safeHTML}}</div>
 				<div class="detail-value major">
 					{{.Params.caseStudy.clientName}}
 					<a href="{{.Params.caseStudy.clientLinkedIn}}">
@@ -66,7 +66,7 @@
 			</div>
 		</div>
 
-		{{.Content}}
+		{{block "main" .}} {{end}}
 
 		<!-- Previous case studies if exists -->
 		{{if .Params.previous}}
@@ -78,7 +78,7 @@
 		{{end}}
 				<h3 class="highlighted-header">
 					{{if .Params.previous.isCaseStudy}}
-						{{i18n "caseStudy.readPreviousCaseStudy"}}
+						{{i18n "caseStudy.readPreviousCaseStudy" | safeHTML}}
 					{{else}}
 						{{.Params.previous.previewCaption}}
 						<img class="micro" src="img/ic_open_tab.svg" alt="Opens in new tab">
@@ -101,7 +101,7 @@
 		{{end}}
 				<h3 class="highlighted-header">
 					{{if .Params.next.isCaseStudy}}
-						{{i18n "caseStudy.readPreviousCaseStudy"}}
+						{{i18n "caseStudy.readPreviousCaseStudy" | safeHTML}}
 					{{else}}
 						{{.Params.next.previewCaption}}
 						<img class="micro" src="img/ic_open_tab.svg" alt="Opens in new tab">

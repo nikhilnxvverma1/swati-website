@@ -1,0 +1,17 @@
+<!-- Client words -->
+<div id="client-remarks">
+	<h4>{{.Params.caseStudy.clientRemarksHeader}}</h4>
+	<p>{{.Params.caseStudy.clientRemarks}}</p>
+	<div id="client-profile">
+		<img src="{{.Params.caseStudy.clientPortfolioPic}}" alt="Client pic">
+		<div class="continued-block">
+			<h4>
+				{{.Params.caseStudy.clientName}}
+				<a href="{{.Params.caseStudy.clientLinkedIn}}">
+					<img src="img/ic_linkedin_profile.svg" alt="Linked In" class="micro">
+				</a>
+			</h4>
+			<p>{{.Params.caseStudy.clientTitleAndPosition}}</p>
+		</div>
+	</div>
+</div>
