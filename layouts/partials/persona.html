@@ -1,6 +1,6 @@
 <!-- Persona -->
 <div class="persona">
-	<div class="profile" style="background-image: url('../{{.Params.caseStudy.inletImage}}');">
+	<div class="profile" style="background-image: url('{{.Params.caseStudy.inletImage}}');">
 		<h4>{{.Params.caseStudy.inletPersonaName}}</h4>
 		<h5>{{.Params.caseStudy.inletPersonaAge}}, {{.Params.caseStudy.inletPersonaProfession}}</h5>
 		<h5>{{.Params.caseStudy.inletPersonaAddress}}</h5>
@@ -16,7 +16,7 @@
 			<div>
 				<h4 class="uppercase">goals</h4>
 				<ul>
-					{{range .Params.caseStudy.inletGoalsCommaSeperated}}
+					{{range .Params.caseStudy.inletGoals}}
 					<li>{{.}}</li>
 					{{end}}
 				</ul>
@@ -24,7 +24,7 @@
 			<div>
 				<h4 class="uppercase">pain points</h4>
 				<ul>
-					{{range .Params.caseStudy.inletPainPointsCommaSeperated}}
+					{{range .Params.caseStudy.inletPainPoints}}
 					<li>{{.}}</li>
 					{{end}}
 				</ul>

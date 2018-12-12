@@ -1,10 +1,4 @@
 {{define "main"}}
-<!-- Intro and overview -->
-
-<h1>{{i18n "veme.openingHeader" | safeHTML}}-</h1>
-<h2>{{i18n "veme.openingSubText" | safeHTML}}</h2>
-<p>{{i18n "veme.introduction" | safeHTML}}</p>
-<p>{{i18n "veme.introLink" | safeHTML}}</p>
-<p class="notice">{{i18n "veme.underDevelopmentNotice" | safeHTML}}</p>
+{{.Content}}
 
 {{end}}

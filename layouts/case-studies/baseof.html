@@ -11,7 +11,7 @@
 <body>
 	{{block "header" .}} {{partial "header.html" .}} {{end}}
 	
-	<img src="{{.Params.heroImage}}"
+	<img src="{{.Params.caseStudy.heroImage}}"
  		alt="Case Study Banner" 
  		class="case-study-banner"/>
 
@@ -68,6 +68,8 @@
 
 		{{if eq .Params.id "veme"}}
 			{{block "veme" .}} {{partial "veme.html" .}} {{end}}
+		{{else if (eq .Params.id "cannalign")}}
+			{{block "cannalign" .}} {{partial "cannalign.html" .}} {{end}}
 		{{else}}
 			{{block "main" .}} {{end}}
 		{{end}}
