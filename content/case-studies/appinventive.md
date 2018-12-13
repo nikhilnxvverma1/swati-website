@@ -1,7 +1,7 @@
 ---
 title: "Appinventive"
 date: 2018-12-10T12:38:25+05:30
-draft: true
+draft: false
 isCaseStudy: false
 externalPortfolioUrl: https://appinventiv.com/
 previewImage: /img/thumb_Appinventiv.png

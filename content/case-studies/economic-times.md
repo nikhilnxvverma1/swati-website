@@ -1,7 +1,7 @@
 ---
 title: "Economic Times"
 date: 2018-12-10T12:38:56+05:30
-draft: true
+draft: false
 isCaseStudy: false
 externalPortfolioUrl: https://economictimes.indiatimes.com/
 previewImage: /img/thumb_ET.png
