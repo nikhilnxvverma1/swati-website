@@ -20,11 +20,11 @@ $secondary-color:#E85F64;
 	font-size:1.2em;
 	
 	p{
-		margin-top:30px;
 		margin-bottom:30px;
 	}
 
 	h2{
+		margin-top:50px;
 		margin-bottom:50px;
 	}
 }
@@ -104,9 +104,16 @@ img.micro{
 	}
 }
 
+#veme-analysis-conclusion{
+	margin-bottom: 100px;
+	li{
+		margin-bottom:25px;
+	}
+}
+
 #challenge{
 	float:left;
-	width:60%;
+	width:50%;
 }
 
 #role{
@@ -177,7 +184,7 @@ p.captions{
 }
 
 .moodboards{
-	margin-bottom:40px;
+	// margin-bottom:40px;
 	.big{
 		width:38%;
 		// background-color: red;
@@ -202,6 +209,8 @@ p.captions{
 	text-align: center;
 	border:2px solid #E3E3E3;
 	padding:10px 90px 20px 90px;
+	margin-top:50px;
+	margin-bottom:30px;
 	>h4{
 		text-transform: uppercase;
 	}
@@ -246,10 +255,13 @@ p.captions{
 	.profile{
 		$profile-image-width:400px;
 		$profile-image-height:500px;
+		background-size:cover;
 		display: inline-block;
+		// flex-grow:1;
 		// width:$profile-image-width;
-		width:35%;
+		width:30%;
 		// height:500px;
+		// flex-basis: 30%;
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-top:$profile-image-height;
@@ -265,26 +277,31 @@ p.captions{
 
 	.detail{
 		display: inline-block;
+		// flex-grow: 2;
 		width:60%;
 		padding-left:20px;
 		vertical-align: top;
 		.lists-container{
 			display: flex;
+			flex-wrap: wrap;
 			>div{
-				width:45%;
-				margin-right:30px;
+				width:40%;
+				flex-grow:1;
+				// margin-right:30px;
 			}
 		}
 	}
 
 	.quote{
-		margin-left:20px;
+		padding-left:20px;
+		padding-right:20px;
 	}
 }
 
-.cannalign-lists-container{
+#cannalign-lists-container{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	flex-wrap: wrap;
 	>div{
 		text-align: left;
 		width:200px;
@@ -335,9 +352,11 @@ p.captions{
 }
 
 #veme-final-output{
-	width:80%;
+	width:90%;
 	height:auto;
 	padding-left:40px;
+	margin-top: 30px;
+	// margin-bottom: 70px;
 }
 
 //mainstream viewing (below 4k but ample enough, think laptops)
@@ -349,17 +368,22 @@ p.captions{
 		padding-left:50px;
 		padding-right:50px;
 	}
-	.outline-detail{
-		display:flex;
-		flex-wrap: wrap;
-		span{
-			display: block;
+	.project-outline{
+		.outline-detail{
+			display:flex;
+			flex-wrap: wrap;
+			span{
+				display: block;
+			}
+			&.major{
+				margin-right:30px;
+			}
 		}
 	}
 }
 
-//breakpoint for fixing challenges and roles at below 1100
-@media screen and (max-width:1100px){
+//breakpoint for fixing challenges and roles at below 1150
+@media screen and (max-width:1150px){
 	#challenge{
 		float:none;
 		width:100%;
@@ -368,6 +392,31 @@ p.captions{
 		float:none;
 	}
 }
+
+//below 1230 make persona wrap its content
+@media screen and (max-width:1230px){
+	.persona{
+		text-align: center;
+		.profile{
+			text-align: initial;
+			width:90%;
+		}
+		
+		.detail{
+			text-align: initial;
+			width: 100%;
+			padding-left:0px;
+			.lists-container{
+				display: flex;
+				flex-wrap: wrap;
+				>div{
+					width:50%;
+				}
+			}
+		}
+	}
+}
+
 
 
 //medium sized (small laptops/tablets etc)
@@ -471,5 +520,59 @@ p.captions{
 
 	#client-remarks{
 		padding:10px 10px 20px 10px;
+	}
+
+	//make goals and pain points of persona come in one column
+	.persona{
+		
+		.detail{
+			.lists-container{
+				display: flex;
+				flex-wrap: wrap;
+				>div{
+					width:100%;
+				}
+			}
+		}
+	}
+}
+
+//extra low margins for ultra small devices
+@media screen and (max-width:321px){
+	.case-study-body{
+		top:-40px;
+		margin-left: 10px;
+		margin-right: 10px;
+		padding-left:10px;
+		padding-right:10px;
+		
+	}
+}
+
+//veme design illustration wrap over for small sizes
+//cannalign moodboards remove big image
+@media screen and (max-width:580px){
+	#veme-design-illustration{
+		display: flex;
+		flex-direction: column;
+		img{
+			width:100%;
+			height: auto;
+			margin-left:0px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.moodboards{
+		.big{
+			display: none;
+		}
+		.small{
+			width:100%;
+			img{
+				width: 45%;
+				height: auto;
+			}
+		}
 	}
 }

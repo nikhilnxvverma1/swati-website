@@ -219,7 +219,7 @@ p.sub-text{
 
 .horizontally-stacked{
 	display: inline-block;
-	width:33%;
+	width:30%;
 }
 
 footer{
@@ -507,6 +507,11 @@ footer nav{
 			top:40px;
 			display: block;
 		}
+	}
+	.horizontally-stacked{
+		display: block;
+		width:95%;
+		margin:10px 10px 40px 10px;
 	}
 }
 
