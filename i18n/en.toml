@@ -186,3 +186,5 @@
  other = "Stages of design. Before final UI design were drafted we covered everything on planning stage itself to reduce iterations. Everything from paper prototypes to low fidelty mockups in balsamiq & prototyping in invision."
 ["caseStudy.share"]
  other = "Share"
+["caseStudy.viewSite"]
+ other = "View Site"

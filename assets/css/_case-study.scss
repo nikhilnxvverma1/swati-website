@@ -339,3 +339,137 @@ p.captions{
 	height:auto;
 	padding-left:40px;
 }
+
+//mainstream viewing (below 4k but ample enough, think laptops)
+@media screen and (max-width:1440px) and (min-width:1025px){
+	.case-study-body{
+		top:-150px;
+		margin-left: 100px;
+		margin-right: 100px;
+		padding-left:50px;
+		padding-right:50px;
+	}
+	.outline-detail{
+		display:flex;
+		flex-wrap: wrap;
+		span{
+			display: block;
+		}
+	}
+}
+
+//breakpoint for fixing challenges and roles at below 1100
+@media screen and (max-width:1100px){
+	#challenge{
+		float:none;
+		width:100%;
+	}
+	#role{
+		float:none;
+	}
+}
+
+
+//medium sized (small laptops/tablets etc)
+@media screen and (max-width:1024px) and (min-width:769px){
+	.case-study-body{
+		top:-130px;
+		margin-left: 50px;
+		margin-right: 50px;
+		padding-left:50px;
+		padding-right:50px;
+	}
+	.project-outline{
+		line-height: initial;
+		padding-top:40px;
+		padding-bottom:0px;
+		&.minor{
+			padding-top: 30px;
+		}
+		#view-site{
+			padding-top:20px;
+			padding-bottom:50px;
+		}
+		
+		.outline-detail{
+			display:flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			padding-bottom: 0px;
+			&.minor{
+				padding-top:40px;
+			}
+			&.major{
+				margin-right: 30px;
+			}
+			span{
+				display: block;
+			}
+	
+			.detail-header{
+				&.minor{
+					line-height:30px;
+					margin-bottom: 10px;
+				}
+				&.major{
+					line-height:30px;
+					margin-bottom:10px;
+				}
+			}
+			.detail-value{
+				line-height: initial;
+			}
+		}
+	}
+
+	#client-remarks{
+		padding:10px 50px 20px 50px;
+	}
+
+}
+
+//everything below medium
+@media screen and (max-width:768px){
+	.case-study-body{
+		top:-75px;
+		margin-left: 30px;
+		margin-right: 30px;
+		padding-left:30px;
+		padding-right:30px;
+		>.project-outline{
+			padding-left:30px;
+			line-height: initial;
+			padding-top:0px;
+			padding-bottom:0px;
+			display: flex;
+			flex-direction: column;
+			border-bottom: 0px;
+			&:first-child{
+				padding-top:40px;
+			}
+
+			.detail-header.major{
+				line-height:60px;
+			}
+			.outline-detail.major{
+				width:100%;
+				display: inline-block;
+			}
+		}
+	}
+	.outline-detail{
+		margin-bottom:20px;
+	}
+	#view-site{
+		padding-left: 0px;
+		border:0px;
+		a{
+			color:black;
+			text-decoration: none;
+		}
+	}
+
+	#client-remarks{
+		padding:10px 10px 20px 10px;
+	}
+}
