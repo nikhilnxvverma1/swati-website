@@ -137,7 +137,7 @@ img.micro{
 }
 
 .other-case-studies{
-	width:30%;
+	width:40%;
 	h3{
 		color:$secondary-color;
 		margin-bottom:3px;
@@ -417,7 +417,21 @@ p.captions{
 	}
 }
 
-
+//below 1024 make other case studies (suggestions) come in one column
+@media screen and (max-width:1024px){
+	.other-case-studies.float-left,.other-case-studies.float-right{
+		width:100%;
+		&.float-left{
+			float:none;
+		}
+		&.float-right{
+			float:none;
+		}
+		h4{
+			margin-bottom:10px;
+		}
+	}
+}
 
 //medium sized (small laptops/tablets etc)
 @media screen and (max-width:1024px) and (min-width:769px){

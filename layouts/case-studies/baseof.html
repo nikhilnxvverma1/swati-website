@@ -77,52 +77,64 @@
 		{{end}}
 
 		<!-- Previous case studies if exists -->
-		{{if .Params.previous}}
-		<div class="other-case-studies float-left">
-		{{if .Params.previous.isCaseStudy}}
-			<a href='/case-study/{{.Params.previous.id}}/'>
-		{{else}}
-			<a href='{{.Params.previous.externalPortfolioUrl}}' target="_blank">
-		{{end}}
-				<h3 class="highlighted-header">
-					{{if .Params.previous.isCaseStudy}}
-						{{i18n "caseStudy.readPreviousCaseStudy" | safeHTML}}
+
+		{{if isset .Params "previous"}}
+			{{ $previous := .Params.previous}}
+			{{ with .Site.GetPage "/case-studies" }}
+				{{ with .GetPage $previous }}
+				<div class="other-case-studies float-left">
+					{{if .Params.isCaseStudy}}
+					<a href='/case-study/{{.Params.id}}/'>
 					{{else}}
-						{{.Params.previous.previewCaption}}
-						<img class="micro" src="img/ic_open_tab.svg" alt="Opens in new tab">
+					<a href='{{.Params.externalPortfolioUrl}}' target="_blank">
 					{{end}}
-				</h3>
-				<p>
-					{{.Params.previous.name}}- {{.Params.previous.previewOverview}}
-				</p>
-			</a>
-		</div>
+					<h4 class="highlighted-header">
+						{{if .Params.isCaseStudy}}
+							{{i18n "caseStudy.readPreviousCaseStudy" | safeHTML}}
+						{{else}}
+							{{.Params.previewCaption}}
+							<img class="micro" src="/img/ic_open_tab.svg" alt="Opens in new tab">
+						{{end}}
+					</h4>
+					<p>
+						{{.Params.name}}- {{.Params.previewOverview}}
+					</p>
+					</a>
+				</div>
+				{{end}}
+			{{end}}
 		{{end}}
 
+
 		<!-- Next case study if exists -->
-		{{if .Params.next}}
-		<div class="other-case-studies float-right">
-		{{if .Params.next.isCaseStudy}}
-			<a href='/case-studies/{{.Params.next.id}}'>
-		{{else}}
-			<a href='{{.Params.next.externalPortfolioUrl}}' target="_blank">
-		{{end}}
-				<h3 class="highlighted-header">
-					{{if .Params.next.isCaseStudy}}
-						{{i18n "caseStudy.readPreviousCaseStudy" | safeHTML}}
+		{{if isset .Params "next"}}
+			{{ $next := .Params.next}}
+			{{ with .Site.GetPage "/case-studies" }}
+				{{ with .GetPage $next }}
+					<div class="other-case-studies float-right">
+					{{if .Params.isCaseStudy}}
+						<a href='/case-studies/{{.Params.id}}'>
 					{{else}}
-						{{.Params.next.previewCaption}}
-						<img class="micro" src="img/ic_open_tab.svg" alt="Opens in new tab">
+						<a href='{{.Params.externalPortfolioUrl}}' target="_blank">
 					{{end}}
-				</h3>
-				<p>
-					{{.Params.next.name}}- {{.Params.next.previewOverview}}
-				</p>
-			</a>
-		</div>
+							<h4 class="highlighted-header">
+								{{if .Params.isCaseStudy}}
+									{{i18n "caseStudy.readPreviousCaseStudy" | safeHTML}}
+								{{else}}
+									{{.Params.previewCaption}}
+									<img class="micro" src="/img/ic_open_tab.svg" alt="Opens in new tab">
+								{{end}}
+							</h4>
+							<p>
+								{{.Params.name}}- {{.Params.previewOverview}}
+							</p>
+						</a>
+					</div>
+				{{end}}
+			{{end}}
+		{{end}}
 		<!-- Clear the floats -->
 		<div style="clear: both;"></div> 
-		{{end}}
 
 	</div>
 
