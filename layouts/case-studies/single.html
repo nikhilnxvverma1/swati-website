@@ -10,6 +10,10 @@
 
 {{.Content}}
 
+<!-- Client words -->
+
+{{block "client-remarks" .}} {{partial "client-remarks.html" .}} {{end}}
+
 <!-- Conclusion -->
 
 {{.Params.conclusion}}
