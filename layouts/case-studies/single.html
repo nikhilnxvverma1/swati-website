@@ -1,4 +1,17 @@
 {{define "main"}}
+
+{{.Params.introduction}}
+
+<!-- Challenges and roles -->
+
+{{block "challenges-roles" .}} {{partial "challenges-roles.html" .}} {{end}}
+
+<!-- Main content -->
+
 {{.Content}}
+
+<!-- Conclusion -->
+
+{{.Params.conclusion}}
 
 {{end}}
