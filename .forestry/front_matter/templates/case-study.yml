@@ -1,0 +1,17 @@
+---
+label: Case Study
+hide_body: false
+is_partial: false
+fields:
+- type: boolean
+  name: isCaseStudy
+  label: isCaseStudy
+  description: Is this a case study or a portfolio project
+- type: text
+  name: name
+  label: Name
+  description: Name of the case study
+- type: textarea
+  label: previewOverview
+  name: previewOverview
+  description: Brief description of the case study to be shown in the homepage
