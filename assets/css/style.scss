@@ -27,6 +27,9 @@ h3{
 a{
 	color:$theme-color;
 	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
 }
 
 header{
@@ -144,7 +147,20 @@ p.sub-text{
 	color:#4A4A4A;
 	letter-spacing: 2px;
 	font-weight: lighter;
-	margin-top:300px;
+	// margin-top:100px;
+	// margin-bottom:300px;
+}
+
+#scroll-invite{
+	margin-top:100px;
+	margin-bottom:300px;
+
+	img{
+		margin:auto;
+		display: block;
+		width: 80px;
+		height:auto;
+	}
 }
 
 .passive-color{
@@ -164,14 +180,21 @@ p.sub-text{
 }
 
 #case-studies{
-	// text-align: center;
+
 	.case-study-item{
-		// text-align: left;
+		h2{
+			font-size:2em;
+		}
 		>a{
+			
 			color:black;
 			text-decoration: none;
 			&:hover{
-				text-decoration: underline;
+				// text-decoration: underline;
+				color:$theme-color;
+				h2{
+					color:black;
+				}
 			}
 		}
 		
