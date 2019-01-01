@@ -7,6 +7,7 @@
   {{ $options := (dict "includePaths" (slice "assets/css")) }}
   {{ $style := resources.Get "css/style.scss" | resources.ToCSS $options| resources.Minify}}
   <link rel="stylesheet" href="{{$style.Permalink}}">
+  <link rel='shortcut icon' type='image/png' href='/favicon.png' />
   <!-- Custom event handling -->
   <script src="/js/ui-handling.js"></script>
 </head>
