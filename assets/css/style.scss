@@ -557,8 +557,11 @@ footer nav{
 			position:relative;
 			top:-30px;
 			float:none;
-			.social-links li{
-				padding-right:15px;
+			ul.social-links{
+				margin-top:initial;
+				>li{
+					padding-right:15px;
+				}
 			}
 		}
 
