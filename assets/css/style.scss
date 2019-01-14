@@ -374,6 +374,7 @@ footer nav{
 	border-left: 1px black solid;
 	padding-left:15px;
 	text-decoration: none;
+	text-transform: uppercase;
 	&:hover{
 		color:$theme-color;
 	}
